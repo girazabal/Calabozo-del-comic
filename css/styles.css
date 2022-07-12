@@ -28,6 +28,8 @@ main {
 
 .main__title {
     text-align: center;
+    font-size: 65px;
+    margin: 50px 0 0 0;
 }
 /* Inicio bienvenida grids */
 .welcome__grid {
@@ -41,7 +43,7 @@ main {
                         "card-crypt card-venom card-mandalorian card-spider"
                         "card-crypt card-venom card-mandalorian card-spider";
     align-self: center;
-    margin: 0 0 50px 0;
+    margin: 50px 0 50px 0;
     column-gap: 25px;
     row-gap: 15px;
 }
@@ -133,12 +135,14 @@ main {
 .card {
     border:solid #deb928 3px
 }
-/* Inicio galeria 2 */
+
 .titles {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    margin: 30px 0 0 0 ;
+    justify-content:space-around;
+    margin: 35px 0 0 0 ;
+    width: 94vw;
+    height: 20vh;
 }
 .galery-titles {
     font-size: 30px;
@@ -146,47 +150,57 @@ main {
 /* Galeria grids */
 .galery__grid {
     display: grid;
-    width: 80vw;
+    width: 96vw;
     height: 40vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "card-catalogue card-collections card-news";
-    align-self: center;
-    column-gap: 50px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card-catalogue card-collections card-news"
+                        "card-catalogue card-collections card-news";
+    column-gap: 25px;
+    margin: 0 0 70px 30px;
 }
 
 .card-catalogue {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
     background-image: url(../resources/catalogo.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 .card-collection {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
     background-image: url(../resources/collection.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .card-news {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
     background-image: url(../resources/news.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 30px 0 0;
 }
 .card-galery {
-    border: solid #3b3a36 10px;
+    border: solid #3b3a36 8px;
+}
+.galery-titles {
+    text-align:center;
+}
+.galery-text {
+    text-align:center;
+    font-size: 21px;
 }
 
 /* Pagina productos */
@@ -243,23 +257,74 @@ main {
 .input__submit {
     margin: 0 0 0 20px;
 }
-/* Pagina - contacto */
-.section__contact {
+.login__grids {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+}
+.batsignal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+.batmancard-login{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(../resources/batmancard-login.jpg);
+    background-position: center;
+    background-size:contain;
+    background-repeat: repeat;
+}
+.login__user{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    justify-content: center;
+    margin: 150px 0 0 0;
 }
-.img__contact {
-    width: 864px;
-    height: 317px;
-    padding: 10px 10px 10px 10px;
-    margin: 0 0 0 200px;
-    background-color: #3b3a36;
+.login__password{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.forms__list{
+    list-style: none;
+}
+.list__font{
+    font-size: 32px;
+}
+/* Pagina - contacto */
+.contact__grids {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+}
+.contact__user{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
 }
 .input__line {
     margin: 0 0 0 0;
 }
-
 .input__line2 {
     margin: 0 0 0 0;
 }
@@ -274,12 +339,6 @@ h2 {
     font-family: 'Prompt', sans-serif;
     color:#cfaf34;
     font-size: 30px;
-}
-.galery-titles {
-    text-align: center;
-}
-.galery-text {
-    text-align:center;
 }
 p {
     font-family: 'Space Grotesk', sans-serif;
@@ -311,17 +370,22 @@ label {
 footer {
     background-color:#cfaf34;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 .footer__smedia {
     color:#242320;
+    font-size: 20px;
+    margin: 15px 25px 15px 0;
 }
 .social__media {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 15px 0;
 }
 /* Media querie mobile */
 @media (min-width:320px) and (max-width:575px) {
+/* Media querie index */
 .main__title {
     font-size: 35px;
 }
@@ -397,6 +461,38 @@ footer {
     background-size:cover;
     background-position:top;
 }
+/* Galeria grids index*/
+.galery__grid {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 25vh;
+    margin: 0 0 20px 50px;
+}
+.card-catalogue {
+    width: 80vw;
+    height: 100vh;
+}
+.card-collection {
+    width: 80vw;
+    height: 100vh;
+}
+.card-news {
+    width: 80vw;
+    height: 100vh;
+}
+.card-galery {
+    border: solid #3b3a36 2px;
+}
+.titles {
+    flex-direction: column;
+    align-self: center;
+    width: 90vw;
+    height: 40vh;
+}
+.galery-text {
+    text-align:center;
+}
 .header__nav {
 flex-direction: column;
 align-items: center;
@@ -408,18 +504,214 @@ align-items: center;
 .footer__icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin: 0 10px 0 0;
 }
 .footer__smedia {
     font-size: 20px;
     align-self: center;
+    margin: 0 0 0 15px;
 }
 p {
     font-size: 20px;
     text-align:center;
 }
+/* media querie login */
+.input__login {
+    margin: 0 0 0 20px;
+}
+.input__submit {
+    margin: 0 0 0 20px;
+}
+.login__text{
+    text-align: center;
+}
+.login__grids {
+    width: auto;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+}
+.batsignal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.batmancard-login{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
 }
 /* Media querie tablet */
 @media (min-width: 576px) and (max-width: 992px) {
+.main__title {
+    font-size: 30px;
+}
+.welcome__grid {
+    height: 120vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 4px;
+}
+.card-marvel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: cover;
+}
+.card-crypt {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size:cover;
+}
+.card-batman {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-size:cover;
+    background-position: top;
+}
+.card-xmen {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-size:cover;
+    background-position: top;
+}
+.card-boba {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size:cover;
+    background-position: top;
+}
+.card-venom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size:cover;
+    background-position:top;
+}
 
+.card-mandalorian {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-size:cover;
+    background-position:top;
+}
+.card-spider {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-size:cover;
+    background-position:top;
+}
+/* Galeria grids*/
+.galery__grid {
+    width: 80vw;
+    margin: 0 0 5px 58px;
+}
+.card-catalogue {
+    width: 27vw;
+    height: 25vh;
+}
+.card-collection {
+    width: 27vw;
+    height: 25vh;
+}
+.card-news {
+    width: 27vw;
+    height: 25vh;
+}
+.card-galery {
+    border: solid #3b3a36 5px;
+}
+.titles {
+    flex-direction: row;
+    align-self: center;
+    width: 90vw;
+    height: 30vh;
+}
+.galery-text {
+    text-align:center;
+}
+.header__nav {
+    flex-direction: column;
+align-items: center;
+}
+.header__item a {
+    font-size: 25px;
+}
+.img__mobile {
+    width:fit-content;
+    height:fit-content;
+}
+.footer__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.footer__smedia {
+    font-size: 25px;
+    align-self: center;
+}
+.social__media {
+    width: 50px;
+    height: 50px;
+}
+p {
+    font-size: 20px;
+    text-align:center;
+}
+/* Login */
+.input__login {
+    margin: 0 0 0 20px;
+}
+.input__submit {
+    margin: 0 0 0 20px;
+}
+.login__text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.login__grids {
+    width: auto;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+}
+.batsignal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.batmancard-login{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
 }

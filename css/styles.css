@@ -170,6 +170,11 @@ main {
     background-size:cover;
     background-repeat: no-repeat;
 }
+/* transformacion de card 1 */
+.card-catalogue:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 1s;
+}
 .card-collection {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -179,7 +184,11 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+}
+/* transformacion de card 2 */
+.card-collection:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 1s;
 }
 .card-news {
     grid-column-start: 3;
@@ -191,6 +200,11 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 30px 0 0;
+}
+/* transformacion de card 3 */
+.card-news:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 1s;
 }
 .card-galery {
     border: solid #3b3a36 8px;

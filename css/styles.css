@@ -3,15 +3,8 @@
     padding: 0px;
 }
 /* Inicio/navegaacion */
-header {
+.header {
     background-color:#3b3a36;
-}
-.header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    list-style:none;
-    padding: 20px 0 0 0;
 }
 .header__item a {
     text-decoration: none;
@@ -19,6 +12,7 @@ header {
     color:#deb928;
     font-size: 20px;
 }
+
 /* Main - Galeria */
 main {
     background-color:#242320;
@@ -222,12 +216,22 @@ main {
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    margin: 0 0 0 15px;
+}
+.section__cosplay {
+    margin: 0 0 0 15px;
+}
+.img-medium {
+    height: 35vh;
+    width: 32vw;
+    padding: 10px 10px 10px 10px;
+    background-color: #3b3a36;
 }
 .img-small {
-    width: 425px;
-    height: 225px;
-    background-color:#3b3a36;
+    height: 32vh;
+    width: 32vw;
     padding: 10px 10px 10px 10px;
+    background-color:#3b3a36;
 }
 .img__cosplay {
     width: 464px;
@@ -240,6 +244,9 @@ main {
     height: 464px;
     background-color:#3b3a36;
     padding: 10px 10px 10px 10px;
+}
+.products__selection {
+    margin: 0 800px 0 15px;
 }
 /* Pagina - coleccionable */
 .section__collect {
@@ -306,18 +313,24 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 150px 0 0 0;
+    margin: 180px 0 0 0;
 }
 .login__password{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.login__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
 .forms__list{
     list-style: none;
 }
 .list__font{
-    font-size: 32px;
+    font-size: 25px;
 }
 /* Pagina - contacto */
 .contact__grids {
@@ -331,16 +344,8 @@ main {
                         "batmancard-login batmancard-login batmancard-login batmancard-login"
                         "batmancard-login batmancard-login batmancard-login batmancard-login";
 }
-.contact__user{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-}
-.input__line {
-    margin: 0 0 0 0;
-}
-.input__line2 {
-    margin: 0 0 0 0;
+.contact__label{
+    color: #242320;
 }
 /* Etiquetas comunes */
 h1 {
@@ -369,7 +374,6 @@ div {
 label {
     color: #deb928;
     font-family: 'Space Grotesk', sans-serif;
-    margin: 0 0 0 20px;
 }
 .input__name {
     margin: 0 0 0 35px;
@@ -378,6 +382,20 @@ label {
     margin: 0 0 0 54px
 }
 .input__button {
+    margin: 0 0 0 20px;
+}
+.btn {
+    background-color: #deb928;
+    border: #deb928;
+}
+.btn-primary {
+    color: #242320;
+    font-size: 15px;
+}
+h2{
+    margin: 0 0 0 20px;
+}
+p{
     margin: 0 0 0 20px;
 }
 /* Footer - redes sociales */
@@ -529,7 +547,11 @@ p {
     font-size: 20px;
     text-align:center;
 }
+
 /* media querie login */
+h1 {
+    margin:0;
+}
 .input__login {
     margin: 0 0 0 20px;
 }
@@ -540,6 +562,41 @@ p {
     text-align: center;
 }
 .login__grids {
+    width: auto;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+}
+.batsignal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.batmancard-login{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
+/* Media querie contacto */
+h1 {
+    margin:0;
+}
+.contact__text{
+    text-align: center;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 35px 0 0 0;
+}
+.contact__grids {
     width: auto;
     height: 80vh;
     grid-template-columns: 1fr;

@@ -618,6 +618,51 @@ h1 {
     grid-row-start: 3;
     grid-row-end:5;
 }
+/* Media querie productos */
+.section__comics {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.section__cosplay {
+    margin: 0 0 0 15px;
+}
+.img-medium {
+    height: 35vh;
+    width: 90vw;
+    padding: 10px 10px 10px 10px;
+    background-color: #3b3a36;
+}
+.img-small {
+    height: 35vh;
+    width: 90vw;
+    padding: 10px 10px 10px 10px;
+    background-color:#3b3a36;
+}
+.img__cosplay {
+    height: 65vh;
+    width: 90vw;
+    background-color:#3b3a36;
+    padding: 10px 10px 10px 10px;
+}
+.img__shirt {
+    height: 60vh;
+    width: 90vw;
+    background-color:#3b3a36;
+    padding: 10px 10px 10px 10px;
+}
+.products__selection {
+    margin: 0 800px 0 15px;
+}
+.label__products{
+    width: 100vw;
+    font-size: 20px;
+}
+.form__products{
+    width: 80vw;
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+}
 }
 /* Media querie tablet */
 @media (min-width: 576px) and (max-width: 992px) {

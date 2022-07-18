@@ -222,7 +222,7 @@ main {
     margin: 0 0 0 15px;
 }
 .img-medium {
-    height: 35vh;
+    height: 40vh;
     width: 32vw;
     padding: 10px 10px 10px 10px;
     background-color: #3b3a36;
@@ -422,76 +422,41 @@ footer {
     font-size: 35px;
 }
 .welcome__grid {
-    height: 250vh;
+    height: 50vh;
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin: 0 0 0 0;
 }
-.card-marvel {
+.card-spider {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     background-size: cover;
 }
-.card-crypt {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-size:cover;
-
-}
-
-.card-batman {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-size:cover;
-}
-
-.card-xmen {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-size:cover;
-    background-position: top;
-}
 .card-boba {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    background-size:cover;
-    background-position: top;
+display: none;
 }
-
 .card-venom {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    background-size:cover;
-    background-position:top;
+display: none;
+}
+.card-batman {
+display:none;
+}
+.card-crypt {
+display: none;
 }
 
 .card-mandalorian {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    background-size:cover;
-    background-position:top;
+display: none;
 }
-.card-spider {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 8;
-    grid-row-end: 9;
-    background-size:cover;
-    background-position:top;
+
+.card-xmen {
+display: none;
+}
+.card-marvel {
+display: none;
 }
 /* Galeria grids index*/
 .galery__grid {
@@ -519,8 +484,10 @@ footer {
 .titles {
     flex-direction: column;
     align-self: center;
+    justify-content:space-evenly;
     width: 90vw;
-    height: 40vh;
+    height: 60vh;
+    margin: 0 0 10px 0;
 }
 .galery-text {
     text-align:center;
@@ -537,6 +504,9 @@ align-items: center;
     display: flex;
     flex-direction: row;
     margin: 0 10px 0 0;
+}
+.ocultar{
+    display: none;
 }
 .footer__smedia {
     font-size: 20px;
@@ -594,7 +564,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 35px 0 0 0;
+    margin: 25px 0 0 0;
+    height: 15vh;
 }
 .contact__grids {
     width: auto;

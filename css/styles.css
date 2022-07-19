@@ -641,25 +641,27 @@ h1 {
     font-size: 30px;
 }
 .welcome__grid {
-    height: 120vh;
+    height: 50vh;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 4px;
 }
-.card-marvel {
+.card-mandalorian {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     background-size: cover;
+    background-position: top;
 }
-.card-crypt {
+.card-venom {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     background-size:cover;
+    background-position: top;
 }
 .card-batman {
     grid-column-start: 1;
@@ -678,37 +680,20 @@ h1 {
     background-position: top;
 }
 .card-boba {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-size:cover;
-    background-position: top;
-}
-.card-venom {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-size:cover;
-    background-position:top;
-}
-
-.card-mandalorian {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-size:cover;
-    background-position:top;
+    display: none;
 }
 .card-spider {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-size:cover;
-    background-position:top;
+    display: none;
+}
+
+.card-marvel {
+    display: none;
+}
+.card-crypt {
+    display: none;
+}
+.ocultar {
+    display: none;
 }
 /* Galeria grids*/
 .galery__grid {

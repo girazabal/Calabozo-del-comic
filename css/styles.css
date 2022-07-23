@@ -235,27 +235,99 @@ main {
   margin: 0 800px 0 20px; }
 
 /* Pagina - coleccionable */
-.section__collect {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between; }
+.collect__grids {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "hot-toys marvel-toys" "sw-toys funko" "spidercosplay simpsons";
+  margin: 0 0 0 40px; }
 
-.video__collect {
+.hot-toys {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.marvel-toys {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.sw-toys {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.funko {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.spidercosplay {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
+.simpsons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
+.collect__video {
   background-color: #242320;
   padding: 10px 10px 10px 10px; }
 
 /* Pagina-nosotros */
-.section__we {
-  display: flex;
-  flex-direction: row;
-  align-content: center; }
+.we__grids {
+  display: grid;
+  width: auto;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
 
-.image__we {
-  background-color: #3b3a36;
-  width: 1080px;
-  height: 520px;
-  padding: 10px 10px 10px 10px;
-  margin: 0 0 30px 0; }
+.batsignal-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
+
+.batsignal-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
+
+.batsignal-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
+
+.we__p {
+  margin: 55px 20px 0 20px; }
 
 /* Pagina - Login */
 .input__login {
@@ -567,6 +639,8 @@ footer {
 @media (min-width: 576px) and (max-width: 992px) {
   .main__title {
     font-size: 30px; }
+  .main__height {
+    height: 135vh; }
   .welcome__grid {
     height: 50vh;
     width: 100vw;
@@ -665,20 +739,28 @@ footer {
     justify-content: center; }
   .login__grids {
     width: auto;
-    height: 80vh;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  .login__user {
+    margin: 70px 0 0 30px; }
+  .login__password {
+    margin: 0 0 30px 30px; }
+  .login__button {
+    margin: 20px 0 50px 30px; }
   .batsignal {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3; }
+    grid-row-end: 2;
+    height: 45vh; }
   .batmancard-login {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5; }
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 45vh; }
   /* Products */
   .section__comics {
     display: flex;
@@ -723,14 +805,32 @@ footer {
   /* Contact */
   .contact__grids {
     width: auto;
-    height: 80vh;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px; }
+  .batsignal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .batmancard-login {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 50vh; }
   .contact__text {
     text-align: justify;
     margin: 10px 0 10px 20px; }
   .contact__label {
-    color: #242320; }
-  .batmancard-login {
-    height: 32vh; } }
+    color: #242320; } }

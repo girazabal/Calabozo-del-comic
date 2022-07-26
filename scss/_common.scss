@@ -1,0 +1,38 @@
+/* Etiquetas comunes */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    color:$main-color;
+    font-size: 48px;
+    margin: 0 0 0 20px;
+}
+h2 {
+    font-family: 'Prompt', sans-serif;
+    color:$var-color;
+    font-size: 30px;
+}
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color:$var-color;
+    text-align:left;
+}
+
+label {
+    color: $main-color;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.btn {
+    background-color: $main-color;
+    border: $main-color;
+}
+.btn-primary {
+    color: #242320;
+    font-size: 15px;
+}
+h2{
+    margin: 0 0 0 20px;
+}
+p{
+    margin: 0 0 0 20px;
+}

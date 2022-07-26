@@ -1,0 +1,38 @@
+/* Pagina productos */
+.section__comics {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 20px 0 20px 20px;
+}
+.cosplay {
+    margin: 20px 0 20px 20px;
+    &__img {
+        width: 464px;
+        height: 546px;
+        background-color:#3b3a36;
+        padding: 10px 10px 10px 10px;
+    }
+}
+.img-medium {
+    height: 40vh;
+    width: 32vw;
+    padding: 10px 10px 10px 10px;
+    background-color: #3b3a36;
+}
+.img-small {
+    height: 32vh;
+    width: 32vw;
+    padding: 10px 10px 10px 10px;
+    background-color:#3b3a36;
+}
+
+.img__shirt {
+    width: 464px;
+    height: 464px;
+    background-color:#3b3a36;
+    padding: 10px 10px 10px 10px;
+}
+.products__selection {
+    margin: 0 800px 0 20px;
+}

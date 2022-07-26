@@ -1,0 +1,62 @@
+/* Pagina - Login */
+.input__login {
+    margin: 0 0 0 20px;
+}
+.input__submit {
+    margin: 0 0 0 20px;
+}
+.login {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+                        &__user{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 180px 0 0 0;
+                        }
+                        &__password{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                        }
+                        &__button{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin-top: 25px;
+                        }
+}
+.batsignal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+.batmancard-login{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(../resources/batmancard-login.jpg);
+    background-position: center;
+    background-size:contain;
+    background-repeat: repeat;
+}
+
+.forms__list{
+    list-style: none;
+}
+.list__font{
+    font-size: 25px;
+}

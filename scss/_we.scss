@@ -1,0 +1,46 @@
+/* Pagina-nosotros */
+.we{
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "none batsignal-2 none"
+                        "batsignal-1 none batsignal-3";
+                        &__p{
+                            margin: 55px 20px 0 20px;
+                        }
+}
+.batsignal-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:#cfaf34 solid 2px;
+}
+.batsignal-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:#cfaf34 solid 2px;
+}
+.batsignal-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:#cfaf34 solid 2px;
+}

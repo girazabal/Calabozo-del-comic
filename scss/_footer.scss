@@ -1,0 +1,20 @@
+/* Footer */
+footer {
+    background-color:$var-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer {
+    &__smedia {
+        color:#242320;
+        font-size: 20px;
+        margin: 15px 25px 15px 0;
+    }
+}
+
+.social__media {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 15px 0;
+}

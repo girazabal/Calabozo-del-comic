@@ -1,7 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px; }
-
+/* Colores */
 /* Inicio/navegaacion */
 .header {
   background-color: #3b3a36; }
@@ -204,8 +201,13 @@ main {
   align-content: space-between;
   margin: 20px 0 20px 20px; }
 
-.section__cosplay {
+.cosplay {
   margin: 20px 0 20px 20px; }
+  .cosplay__img {
+    width: 464px;
+    height: 546px;
+    background-color: #3b3a36;
+    padding: 10px 10px 10px 10px; }
 
 .img-medium {
   height: 40vh;
@@ -219,12 +221,6 @@ main {
   padding: 10px 10px 10px 10px;
   background-color: #3b3a36; }
 
-.img__cosplay {
-  width: 464px;
-  height: 546px;
-  background-color: #3b3a36;
-  padding: 10px 10px 10px 10px; }
-
 .img__shirt {
   width: 464px;
   height: 464px;
@@ -235,7 +231,7 @@ main {
   margin: 0 800px 0 20px; }
 
 /* Pagina - coleccionable */
-.collect__grids {
+.collect {
   display: grid;
   width: auto;
   height: auto;
@@ -281,13 +277,15 @@ main {
   grid-row-end: 4; }
 
 /* Pagina-nosotros */
-.we__grids {
+.we {
   display: grid;
   width: auto;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
+  .we__p {
+    margin: 55px 20px 0 20px; }
 
 .batsignal-1 {
   grid-column-start: 1;
@@ -322,9 +320,6 @@ main {
   background-repeat: no-repeat;
   border: #cfaf34 solid 2px; }
 
-.we__p {
-  margin: 55px 20px 0 20px; }
-
 /* Pagina - Login */
 .input__login {
   margin: 0 0 0 20px; }
@@ -332,13 +327,27 @@ main {
 .input__submit {
   margin: 0 0 0 20px; }
 
-.login__grids {
+.login {
   display: grid;
   width: auto;
-  height: 100vh;
+  height: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  .login__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 180px 0 0 0; }
+  .login__password {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .login__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px; }
 
 .batsignal {
   grid-column-start: 1;
@@ -360,23 +369,6 @@ main {
   background-size: contain;
   background-repeat: repeat; }
 
-.login__user {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 180px 0 0 0; }
-
-.login__password {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.login__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 25px; }
-
 .forms__list {
   list-style: none; }
 
@@ -384,16 +376,32 @@ main {
   font-size: 25px; }
 
 /* Pagina - contacto */
-.contact__grids {
+.contact {
   display: grid;
   width: auto;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  .contact__label {
+    color: #242320; }
 
-.contact__label {
-  color: #242320; }
+/* Footer */
+footer {
+  background-color: #cfaf34;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.footer__smedia {
+  color: #242320;
+  font-size: 20px;
+  margin: 15px 25px 15px 0; }
+
+.social__media {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 15px 0; }
 
 /* Etiquetas comunes */
 h1 {
@@ -413,24 +421,9 @@ p {
   color: #cfaf34;
   text-align: left; }
 
-.text__galery {
-  margin: 0 0 0 55px; }
-
-div {
-  font-size: 16px; }
-
 label {
   color: #deb928;
   font-family: 'Space Grotesk', sans-serif; }
-
-.input__name {
-  margin: 0 0 0 35px; }
-
-.input__email {
-  margin: 0 0 0 54px; }
-
-.input__button {
-  margin: 0 0 0 20px; }
 
 .btn {
   background-color: #deb928;
@@ -446,22 +439,9 @@ h2 {
 p {
   margin: 0 0 0 20px; }
 
-/* Footer - redes sociales */
-footer {
-  background-color: #cfaf34;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.footer__smedia {
-  color: #242320;
-  font-size: 20px;
-  margin: 15px 25px 15px 0; }
-
-.social__media {
-  width: 40px;
-  height: 40px;
-  margin: 10px 0 15px 0; }
+* {
+  margin: 0px;
+  padding: 0px; }
 
 /* Media querie mobile */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -527,16 +507,8 @@ footer {
   .img__mobile {
     width: fit-content;
     height: fit-content; }
-  .footer__icons {
-    display: flex;
-    flex-direction: row;
-    margin: 0 10px 0 0; }
   .ocultar {
     display: none; }
-  .footer__smedia {
-    font-size: 20px;
-    align-self: center;
-    margin: 0 0 0 15px; }
   p {
     font-size: 20px;
     text-align: center; }
@@ -549,7 +521,7 @@ footer {
     margin: 0 0 0 20px; }
   .login__text {
     text-align: center; }
-  .login__grids {
+  .login {
     width: auto;
     height: 80vh;
     grid-template-columns: 1fr;
@@ -572,20 +544,20 @@ footer {
   /* Media querie contacto */
   h1 {
     margin: 0; }
-  .contact__text {
-    text-align: center; }
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 25px 0 0 0;
-    height: 15vh; }
-  .contact__grids {
+  .contact {
     width: auto;
     height: 80vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+    .contact__text {
+      text-align: center; }
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 25px 0 0 0;
+      height: 15vh; }
   .batsignal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -601,8 +573,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: space-between; }
-  .section__cosplay {
+  .cosplay {
     margin: 0 0 0 15px; }
+    .cosplay__img {
+      height: 80vh;
+      width: 90vw;
+      background-color: #3b3a36;
+      padding: 10px 10px 10px 10px; }
   .products__title {
     text-align: center; }
   .img-medium {
@@ -615,11 +592,6 @@ footer {
     width: 90vw;
     padding: 10px 10px 10px 10px;
     background-color: #3b3a36; }
-  .img__cosplay {
-    height: 80vh;
-    width: 90vw;
-    background-color: #3b3a36;
-    padding: 10px 10px 10px 10px; }
   .img__shirt {
     height: 70vh;
     width: 90vw;
@@ -635,7 +607,7 @@ footer {
     margin: 5px 0 5px 0;
     font-size: 20px; }
   /* Media querie espacio coleccionable */
-  .collect__grids {
+  .collect {
     width: auto;
     height: auto;
     grid-template-columns: 1fr;
@@ -682,24 +654,33 @@ footer {
     grid-row-start: 6;
     grid-row-end: 7; }
   /* Media querie sobre nosotros */
-  .we__grids {
+  .we {
     display: grid;
     width: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
+    .we__p {
+      margin: 20px 20px 20px 20px; }
+    .we__title {
+      font-size: 40px;
+      text-align: center; }
   .batsignal-1 {
     display: none; }
   .batsignal-2 {
     display: none; }
   .batsignal-3 {
     display: none; }
-  .we__p {
-    margin: 20px 20px 20px 20px; }
-  .we__title {
-    font-size: 40px;
-    text-align: center; } }
+  /* Media querie footer */
+  .footer__icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 0 0; }
+  .footer__smedia {
+    font-size: 20px;
+    align-self: center;
+    margin: 0 0 0 15px; } }
 
 /* Media querie tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -781,16 +762,6 @@ footer {
   .img__mobile {
     width: fit-content;
     height: fit-content; }
-  .footer__icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .footer__smedia {
-    font-size: 25px;
-    align-self: center; }
-  .social__media {
-    width: 50px;
-    height: 50px; }
   p {
     font-size: 20px;
     text-align: center; }
@@ -803,18 +774,18 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center; }
-  .login__grids {
+  .login {
     width: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
-  .login__user {
-    margin: 70px 0 0 30px; }
-  .login__password {
-    margin: 0 0 30px 30px; }
-  .login__button {
-    margin: 20px 0 50px 30px; }
+    .login__user {
+      margin: 70px 0 0 30px; }
+    .login__password {
+      margin: 0 0 30px 30px; }
+    .login__button {
+      margin: 20px 0 50px 30px; }
   .batsignal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -833,8 +804,13 @@ footer {
     flex-direction: column;
     align-content: space-between;
     margin: 20px 0 20px 40px; }
-  .section__cosplay {
+  .cosplay {
     margin: 20px 0 20px 40px; }
+    .cosplay .cosplay__img {
+      height: 120vh;
+      width: 90vw;
+      background-color: #3b3a36;
+      padding: 10px 10px 10px 10px; }
   .products__title {
     text-align: center; }
   .products__subtitles {
@@ -849,11 +825,6 @@ footer {
     width: 90vw;
     padding: 10px 10px 10px 10px;
     background-color: #3b3a36; }
-  .img__cosplay {
-    height: 120vh;
-    width: 90vw;
-    background-color: #3b3a36;
-    padding: 10px 10px 10px 10px; }
   .img__shirt {
     height: 100vh;
     width: 90vw;
@@ -869,21 +840,26 @@ footer {
     margin: 5px 0 5px 0;
     font-size: 20px; }
   /* Contact */
-  .contact__grids {
+  .contact {
     width: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .contact__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px; }
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contact__button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 100px; }
+    .contact__text {
+      text-align: justify;
+      margin: 10px 0 10px 20px; }
+    .contact__label {
+      color: #242320; }
   .batsignal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -895,25 +871,20 @@ footer {
     grid-row-start: 3;
     grid-row-end: 5;
     height: 50vh; }
-  .contact__text {
-    text-align: justify;
-    margin: 10px 0 10px 20px; }
-  .contact__label {
-    color: #242320; }
   /* Media querie espacio coleccionable */
-  .collect__grids {
+  .collect {
     width: auto;
     height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "hot-toys marvel-toys" "sw-toys funko" "spidercosplay simpsons";
     margin: 0 0 20px 60px; }
-  .collect__title {
-    font-size: 40px;
-    text-align: center; }
-  .collect__text {
-    font-size: 20px;
-    margin: 10px 10px 10px 10px; }
+    .collect__title {
+      font-size: 40px;
+      text-align: center; }
+    .collect__text {
+      font-size: 20px;
+      margin: 10px 10px 10px 10px; }
   iframe {
     width: 40vw;
     height: 25vh; }
@@ -948,13 +919,18 @@ footer {
     grid-row-start: 3;
     grid-row-end: 4; }
   /* Media querie sobre nosotros */
-  .we__grids {
+  .we {
     display: grid;
     width: auto;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
+    .we__p {
+      margin: 20px 20px 20px 20px; }
+    .we__title {
+      font-size: 40px;
+      text-align: center; }
   .batsignal-1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -985,8 +961,14 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     border: #cfaf34 solid 2px; }
-  .we__p {
-    margin: 20px 20px 20px 20px; }
-  .we__title {
-    font-size: 40px;
-    text-align: center; } }
+  /* Media querie footer */
+  .footer__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footer__smedia {
+    font-size: 25px;
+    align-self: center; }
+  .social__media {
+    width: 50px;
+    height: 50px; } }

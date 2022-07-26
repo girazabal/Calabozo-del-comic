@@ -1,0 +1,15 @@
+/* Pagina - contacto */
+.contact {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "batsignal batsignal batsignal batsignal"
+                        "batsignal batsignal batsignal batsignal"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login"
+                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+                        &__label{
+                            color: #242320;
+                        }
+}

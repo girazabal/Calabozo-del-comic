@@ -523,12 +523,10 @@ p {
     text-align: center; }
   .login {
     width: auto;
-    height: 80vh;
+    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login";
-    width: auto;
-    height: auto; }
+    grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
   .login__button {
     margin-bottom: 40px; }
   .batsignal {
@@ -600,12 +598,14 @@ p {
   .products__selection {
     margin: 0 800px 0 15px; }
   .label__products {
-    width: 100vw;
+    width: 90vw;
     font-size: 20px; }
   .form__products {
     width: 80vw;
     margin: 5px 0 5px 0;
     font-size: 20px; }
+  .form-check {
+    width: 70vw; }
   /* Media querie espacio coleccionable */
   .collect {
     width: auto;

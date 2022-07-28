@@ -614,12 +614,13 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "hot-toys marvel-toys" "sw-toys funko" "spidercosplay simpsons";
     margin: 0 0 0 40px; }
-  .collect__title {
-    font-size: 40px;
-    text-align: center; }
-  .collect__text {
-    font-size: 20px;
-    margin: 10px 10px 10px 10px; }
+    .collect__title {
+      font-size: 40px;
+      text-align: center; }
+    .collect__text {
+      font-size: 20px;
+      margin: 10px 40px 10px 40px;
+      text-align: left; }
   iframe {
     width: 80vw;
     height: 40vh; }
@@ -662,7 +663,9 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
     .we__p {
-      margin: 20px 20px 20px 20px; }
+      margin: 20px 20px 20px 20px;
+      text-align: left;
+      margin: 20px 25px 20px 25px; }
     .we__title {
       font-size: 40px;
       text-align: center; }
@@ -884,7 +887,8 @@ p {
       text-align: center; }
     .collect__text {
       font-size: 20px;
-      margin: 10px 10px 10px 10px; }
+      margin: 20px 30px 10px 60px;
+      text-align: left; }
   iframe {
     width: 40vw;
     height: 25vh; }
@@ -927,7 +931,8 @@ p {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
     .we__p {
-      margin: 20px 20px 20px 20px; }
+      margin: 20px 20px 20px 20px;
+      text-align: left; }
     .we__title {
       font-size: 40px;
       text-align: center; }

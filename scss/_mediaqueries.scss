@@ -231,14 +231,16 @@
                             "sw-toys funko"
                             "spidercosplay simpsons";
         margin: 0 0 0 40px;
+        &__title{
+            font-size: 40px;
+            text-align: center;
+        }
+        &__text{
+            font-size: 20px;
+            margin: 10px 40px 10px 40px;
+            text-align: left;
     }
-    .collect__title{
-        font-size: 40px;
-        text-align: center;
-    }
-    .collect__text{
-        font-size: 20px;
-        margin: 10px 10px 10px 10px;
+
     }
     iframe{
         width: 80vw;
@@ -291,6 +293,8 @@
                             "batsignal-1 none batsignal-3";
                             &__p{
                                 margin: 20px 20px 20px 20px;
+                                text-align: left;
+                                margin: 20px 25px 20px 25px;
                             }
                             &__title{
                                 font-size: 40px;
@@ -587,7 +591,8 @@
         }
         &__text{
             font-size: 20px;
-            margin: 10px 10px 10px 10px;
+            margin: 20px 30px 10px 60px;
+            text-align: left;
         }
     }
     
@@ -642,6 +647,7 @@
                             "batsignal-1 none batsignal-3";
                             &__p{
                                 margin: 20px 20px 20px 20px;
+                                text-align: left;
                             }
                             &__title{
                                 font-size: 40px;

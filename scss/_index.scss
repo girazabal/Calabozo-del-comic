@@ -54,9 +54,7 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-crypt.jpg);
-    background-position:center;
-    background-size:contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 
 .card-batman {
@@ -65,9 +63,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-batman.jpg);
-    background-position:center;
-    background-size:contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 
 .card-xmen {
@@ -76,9 +72,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-xmen.jpg);
-    background-position:center;
-    background-size:contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 .card-boba {
     grid-column-start: 4;
@@ -86,9 +80,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-boba.jpg);
-    background-position:center;
-    background-size: contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 
 .card-venom {
@@ -97,9 +89,7 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-venom.jpg);
-    background-position:center;
-    background-size:contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 
 .card-mandalorian {
@@ -108,9 +98,7 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-mandalorian.jpg);
-    background-position:center;
-    background-size:contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 .card-spider {
     grid-column-start: 4;
@@ -118,9 +106,7 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-spider.jpg);
-    background-position:center;
-    background-size: contain;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 .card {
     border:solid $main-color 3px
@@ -171,9 +157,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(../resources/collection.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .card-catalogue;
 }
 /* transformacion de card 2 */
 .card-collection:hover{
@@ -186,9 +170,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(../resources/news.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .card-catalogue;
     margin: 0 30px 0 0;
 }
 /* transformacion de card 3 */

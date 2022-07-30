@@ -9,6 +9,9 @@
                         "sw-toys funko"
                         "spidercosplay simpsons";
     margin: 0 0 0 20px;
+    &__text{
+        margin: 0 20px 0 20px;
+    }
 }
 .hot-toys{
     grid-column-start: 1;

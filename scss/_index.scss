@@ -44,9 +44,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-marvel.jpg);
-    background-size:contain;
-    background-position: center;
-    background-repeat: repeat;
+    @extend .card-marvel;
 }
 .card-crypt {
     grid-column-start: 1;
@@ -63,7 +61,9 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-batman.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .card-xmen {
@@ -72,7 +72,9 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-xmen.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 .card-boba {
     grid-column-start: 4;
@@ -89,7 +91,9 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-venom.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .card-mandalorian {
@@ -98,7 +102,9 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-mandalorian.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 .card-spider {
     grid-column-start: 4;
@@ -106,7 +112,9 @@ main {
     grid-row-start: 3;
     grid-row-end: 5;
     background-image: url(../resources/card-spider.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 .card {
     border:solid $main-color 3px

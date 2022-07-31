@@ -33,15 +33,12 @@ main {
   column-gap: 25px;
   row-gap: 15px; }
 
-.card-marvel, .card-crypt, .card-batman, .card-xmen, .card-boba, .card-venom, .card-mandalorian, .card-spider {
+.card-marvel, .card-crypt, .card-boba {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(../resources/card-marvel.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat; }
+  background-image: url(../resources/card-marvel.jpg); }
 
 .card-crypt {
   grid-column-start: 1;
@@ -55,14 +52,20 @@ main {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(../resources/card-batman.jpg); }
+  background-image: url(../resources/card-batman.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; }
 
 .card-xmen {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(../resources/card-xmen.jpg); }
+  background-image: url(../resources/card-xmen.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; }
 
 .card-boba {
   grid-column-start: 4;
@@ -76,21 +79,30 @@ main {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 5;
-  background-image: url(../resources/card-venom.jpg); }
+  background-image: url(../resources/card-venom.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; }
 
 .card-mandalorian {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
-  background-image: url(../resources/card-mandalorian.jpg); }
+  background-image: url(../resources/card-mandalorian.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; }
 
 .card-spider {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 5;
-  background-image: url(../resources/card-spider.jpg); }
+  background-image: url(../resources/card-spider.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; }
 
 .card {
   border: solid #deb928 3px; }
@@ -447,7 +459,7 @@ p {
     display: none; }
   .card-xmen {
     display: none; }
-  .card-marvel, .card-crypt, .card-batman, .card-xmen, .card-boba, .card-venom, .card-mandalorian, .card-spider {
+  .card-marvel, .card-crypt, .card-boba {
     display: none; }
   /* Galeria grids index*/
   .galery__grid {
@@ -704,7 +716,7 @@ p {
     display: none; }
   .card-spider {
     display: none; }
-  .card-marvel, .card-crypt, .card-batman, .card-xmen, .card-boba, .card-venom, .card-mandalorian, .card-spider {
+  .card-marvel, .card-crypt, .card-boba {
     display: none; }
   .card-crypt {
     display: none; }

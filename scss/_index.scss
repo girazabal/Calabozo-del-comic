@@ -44,7 +44,9 @@ main {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(../resources/card-marvel.jpg);
-    @extend .card-marvel;
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
 }
 .card-crypt {
     grid-column-start: 1;
@@ -83,6 +85,7 @@ main {
     grid-row-end: 3;
     background-image: url(../resources/card-boba.jpg);
     @extend .card-marvel;
+;
 }
 
 .card-venom {

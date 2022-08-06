@@ -1,10 +1,152 @@
 /* Pagina productos */
-.section__comics {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    margin: 20px 0 20px 20px;
+.products__title {
+    margin: 0 0 0 90px;
 }
+.products__subtitles{
+    text-align: center;
+}
+.comics__grid {
+    display: grid;
+    width: 85vw;
+    height: 45vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "productos4 comics2 news";
+    column-gap: 25px;
+    align-self: center;
+    margin: 20px 0 20px 0;
+}
+
+.productos4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #3b3a36 solid 5px;
+}
+.comics2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/Comics-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #3b3a36 solid 5px;
+}
+.news{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/news.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #3b3a36 solid 5px;
+}
+
+.toys__grid{
+        display: grid;
+        width: 85vw;
+        height: 45vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "productos-1 productos-2 productos-3";
+        column-gap: 25px;
+        align-self: center;
+        margin: 20px 0 20px 0;
+}
+
+.productos-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.productos-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.productos-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.cosplay__grid{
+    display: grid;
+    width: 85vw;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "productos-5 productos-6 productos-7";
+    column-gap: 25px;
+    align-self: center;
+    margin: 20px 0 20px 0;
+}
+
+.productos-5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-5.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.productos-6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.productos-7{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/productos-7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
 .cosplay {
     margin: 20px 0 20px 20px;
     &__img {
@@ -14,25 +156,54 @@
         padding: 10px 10px 10px 10px;
     }
 }
-.img-medium {
-    height: 40vh;
-    width: 32vw;
-    padding: 10px 10px 10px 10px;
-    background-color: #3b3a36;
-}
-.img-small {
-    height: 32vh;
-    width: 32vw;
-    padding: 10px 10px 10px 10px;
-    background-color:#3b3a36;
+.tshirt__grid{
+    display: grid;
+    width: 85vw;
+    height: 70vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "star-wars x-files cobra-kai";
+    column-gap: 20px;
+    align-self: center;
+    margin: 15px 0 15px 0;
 }
 
-.img__shirt {
-    width: 464px;
-    height: 464px;
-    background-color:#3b3a36;
-    padding: 10px 10px 10px 10px;
+.star-wars{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/remera-starwars.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
 }
+
+.x-files{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/remera-xfiles.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
+.cobra-kai{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/remera-cobrakai.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border:#3b3a36 solid 5px;
+}
+
 .products__selection {
-    margin: 0 800px 0 20px;
+    margin: 0 650px 0 95px;
 }

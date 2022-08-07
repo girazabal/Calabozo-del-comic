@@ -124,35 +124,43 @@ main {
 /* Galeria grids */
 .galery__grid {
   display: grid;
-  width: 96vw;
-  height: 40vh;
+  width: 90vw;
+  height: 50vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "card-catalogue card-collections card-news" "card-catalogue card-collections card-news";
-  column-gap: 25px;
-  margin: 0 0 70px 30px; }
+  grid-template-areas: "card-catalogue card-collection card-news" "card-catalogue card-collection card-news";
+  column-gap: 40px;
+  margin: 30px 0 30px 20px; }
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .card-catalogue, .card-collection, .card-news {
+  border: #deb928 solid 3px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-image: url(../resources/catalogo.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../resources/Comics-2.jpg);
+  background-color: #3b3a36;
+  background-position: bottom;
+  background-size: contain;
   background-repeat: no-repeat; }
 
 /* transformacion de card 1 */
 .card-catalogue:hover, .card-collection:hover, .card-news:hover {
   transform: scale(1.15, 1.15);
-  transition: all 1s; }
+  transition: all 1s;
+  border: #cfaf34 solid 3px; }
 
 .card-collection {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-image: url(../resources/collection.jpg); }
+  background-image: url(../resources/comics-login.jpg); }
 
 /* transformacion de card 2 */
 .card-collection:hover {
@@ -179,8 +187,9 @@ main {
   text-align: center; }
 
 .galery-text {
-  text-align: center;
-  font-size: 21px; }
+  text-align: left;
+  font-size: 21px;
+  margin: 0 0 0 0; }
 
 /* Pagina productos */
 .buy-card {
@@ -194,7 +203,8 @@ main {
   margin: 0 5px 0 0; }
 
 .products__title {
-  text-align: center; }
+  text-align: center;
+  margin: 20px 0 0 0; }
 
 .products__subtitles {
   margin: 0 0 0 150px; }
@@ -223,7 +233,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .comic-xmen {
   grid-column-start: 2;
@@ -235,7 +246,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .comic-mandalorian {
   grid-column-start: 3;
@@ -247,7 +259,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .comic-batman {
   grid-column-start: 4;
@@ -259,7 +272,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .comic-boba {
   grid-column-start: 5;
@@ -271,18 +285,19 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .toys__grid {
   display: grid;
   width: 75vw;
-  height: 58vh;
+  height: 60vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
   column-gap: 25px;
   align-self: center;
-  margin: 20px 0 20px 0; }
+  margin: 20px 20px 20px 0; }
 
 .productos-1 {
   grid-column-start: 1;
@@ -294,7 +309,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .productos-2 {
   grid-column-start: 2;
@@ -306,7 +322,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .productos-3 {
   grid-column-start: 3;
@@ -318,7 +335,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .productos-4 {
   grid-column-start: 4;
@@ -330,12 +348,13 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .tshirt__grid {
   display: grid;
   width: 75vw;
-  height: 58vh;
+  height: 53vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "star-wars x-files cobra-kai spiderman";
@@ -353,7 +372,8 @@ main {
   background-size: contain;
   background-position: ctop;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .x-files {
   grid-column-start: 2;
@@ -365,7 +385,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .cobra-kai {
   grid-column-start: 3;
@@ -377,7 +398,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .spiderman {
   grid-column-start: 4;
@@ -389,7 +411,8 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  border: #3b3a36 solid 5px; }
+  border: #3b3a36 solid 5px;
+  border-radius: 3%; }
 
 .products__selection {
   margin: 0 650px 0 95px; }
@@ -397,50 +420,73 @@ main {
 /* Pagina - coleccionable */
 .collect {
   display: grid;
-  width: auto;
+  width: 50vw;
   height: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "hot-toys marvel-toys" "sw-toys funko" "spidercosplay simpsons";
-  margin: 0 0 0 20px; }
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 20px 0 30px 150px; }
   .collect__text {
-    margin: 0 20px 0 20px; }
+    margin: 0 100px 0 150px; }
+  .collect__title {
+    text-align: center;
+    margin: 20px 0 20px 0; }
 
 .hot-toys {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 2; }
+  grid-row-end: 2;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 .marvel-toys {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2; }
+  grid-row-end: 2;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 .sw-toys {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3; }
+  grid-row-end: 3;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 .funko {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 3; }
+  grid-row-end: 3;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 .spidercosplay {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
-  grid-row-end: 4; }
+  grid-row-end: 4;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 .simpsons {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
-  grid-row-end: 4; }
+  grid-row-end: 4;
+  background-color: #3b3a36;
+  border: #deb928 solid 5px;
+  border-radius: 3%; }
 
 /* Pagina-nosotros */
 .we {
@@ -452,6 +498,9 @@ main {
   grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
   .we__p {
     margin: 55px 20px 0 20px; }
+  .we__title {
+    text-align: center;
+    margin: 20px 0 20px 0; }
 
 .batsignal-1 {
   grid-column-start: 1;
@@ -514,6 +563,9 @@ main {
     flex-direction: row;
     justify-content: center;
     margin-top: 25px; }
+  .login__text {
+    text-align: center;
+    margin: 20px 0 0 0; }
 
 .batsignal {
   grid-column-start: 1;
@@ -546,11 +598,60 @@ main {
   display: grid;
   width: auto;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
   .contact__label {
     color: #242320; }
+  .contact__text {
+    text-align: center;
+    margin: 20px 0 20px 0; }
+  .contact__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 5px; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0; }
+  .contact__p {
+    margin: 10px 25px 10px 25px;
+    font-size: 25px; }
+
+.batsignal-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
+
+.batsignal-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
+
+.batsignal-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: #cfaf34 solid 2px; }
 
 /* Footer */
 footer {
@@ -581,6 +682,11 @@ h2 {
   color: #cfaf34;
   font-size: 30px; }
 
+h3 {
+  font-family: 'Prompt', sans-serif;
+  color: #cfaf34;
+  font-size: 30px; }
+
 p {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
@@ -593,7 +699,8 @@ label {
 
 .btn {
   background-color: #deb928;
-  border: #deb928; }
+  border: #deb928;
+  background-image: radial-gradient(#deb928, #cfaf34); }
 
 .btn-primary {
   color: #242320;
@@ -615,17 +722,14 @@ p {
   .main__title {
     font-size: 35px; }
   .welcome__grid {
+    display: none;
     height: 50vh;
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 0 0 0 0; }
   .card-spider {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-size: cover; }
+    display: none; }
   .card-boba {
     display: none; }
   .card-venom {
@@ -642,14 +746,16 @@ p {
     display: none; }
   /* Galeria grids index*/
   .galery__grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     width: 80vw;
     height: 25vh;
     margin: 0 0 20px 50px; }
   .card-catalogue, .card-collection, .card-news {
-    width: 80vw;
-    height: 100vh; }
+    width: 50vw;
+    height: 30vh;
+    margin: 10px 0 10px 25px; }
   .card-collection {
     width: 80vw;
     height: 100vh; }

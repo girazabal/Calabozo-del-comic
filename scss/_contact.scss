@@ -3,13 +3,64 @@
     display: grid;
     width: auto;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "batsignal batsignal batsignal batsignal"
-                        "batsignal batsignal batsignal batsignal"
-                        "batmancard-login batmancard-login batmancard-login batmancard-login"
-                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "none batsignal-2 none"
+                        "batsignal-1 none batsignal-3";
                         &__label{
                             color: #242320;
                         }
+                        &__text{
+                            text-align: center;
+                            margin: 20px 0 20px 0;
+                        }
+                        &__button{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content:space-between;
+                            margin: 5px 5px 5px 5px;
+                        }
+                        &__form{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 20px 0 0 0;
+                        }
+                        &__p{
+                            margin: 10px 25px 10px 25px;
+                            font-size: 25px;
+                        }
+}
+.batsignal-2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:$var-color solid 2px;
+}
+.batsignal-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:$var-color solid 2px;
+}
+.batsignal-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:$var-color solid 2px;
 }

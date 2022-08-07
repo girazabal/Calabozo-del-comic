@@ -32,6 +32,10 @@
                             justify-content: center;
                             margin-top: 25px;
                         }
+                        &__text{
+                            text-align: center;
+                            margin: 20px 0 0 0;
+                        }
 }
 .batsignal{
     grid-column-start: 1;

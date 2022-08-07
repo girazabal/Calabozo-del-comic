@@ -10,6 +10,12 @@ h2 {
     color:$var-color;
     font-size: 30px;
 }
+
+h3 {
+    font-family: 'Prompt', sans-serif;
+    color:$var-color;
+    font-size: 30px;
+}
 p {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
@@ -25,7 +31,9 @@ label {
 .btn {
     background-color: $main-color;
     border: $main-color;
+    background-image: radial-gradient(#deb928,#cfaf34);
 }
+
 .btn-primary {
     color: #242320;
     font-size: 15px;

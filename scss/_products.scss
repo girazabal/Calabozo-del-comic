@@ -23,6 +23,7 @@
     display: grid;
     width: 75vw;
     height: 58vh;
+    max-height: 380px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
@@ -103,6 +104,7 @@
         display: grid;
         width: 75vw;
         height: 60vh;
+        max-height: 360px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
@@ -170,6 +172,7 @@
     display: grid;
     width: 75vw;
     height: 53vh;
+    max-height: 330px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "star-wars x-files cobra-kai spiderman";

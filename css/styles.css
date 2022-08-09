@@ -125,7 +125,8 @@ main {
 .galery__grid {
   display: grid;
   width: 90vw;
-  height: 50vh;
+  height: 48vh;
+  max-height: 330px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "card-catalogue card-collection card-news" "card-catalogue card-collection card-news";
@@ -138,7 +139,6 @@ main {
   justify-content: center; }
 
 .card-catalogue, .card-collection, .card-news {
-  border: #deb928 solid 3px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -165,7 +165,8 @@ main {
 /* transformacion de card 2 */
 .card-collection:hover {
   transform: scale(1.15, 1.15);
-  transition: all 1s; }
+  transition: all 1s;
+  border: #cfaf34 solid 3px; }
 
 .card-news {
   grid-column-start: 3;
@@ -178,18 +179,21 @@ main {
 /* transformacion de card 3 */
 .card-news:hover {
   transform: scale(1.15, 1.15);
-  transition: all 1s; }
+  transition: all 1s;
+  border: #cfaf34 solid 3px; }
 
 .card-galery {
-  border: solid #3b3a36 8px; }
+  border: #cfaf34 solid 3px;
+  border-radius: 3%; }
 
 .galery-titles {
-  text-align: center; }
+  text-align: center;
+  margin: 0 5px 0 0; }
 
 .galery-text {
-  text-align: left;
+  text-align: center;
   font-size: 21px;
-  margin: 0 0 0 0; }
+  margin: 5px 5px 0 5px; }
 
 /* Pagina productos */
 .buy-card {
@@ -216,6 +220,7 @@ main {
   display: grid;
   width: 75vw;
   height: 58vh;
+  max-height: 380px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
@@ -292,6 +297,7 @@ main {
   display: grid;
   width: 75vw;
   height: 60vh;
+  max-height: 360px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
@@ -355,6 +361,7 @@ main {
   display: grid;
   width: 75vw;
   height: 53vh;
+  max-height: 330px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "star-wars x-files cobra-kai spiderman";
@@ -545,15 +552,15 @@ main {
 .login {
   display: grid;
   width: auto;
-  height: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "batsignal-a batsignal-b batsignal-c" "batsignal-d batsignal-e batsignal-f"; }
   .login__user {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 180px 0 0 0; }
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px; }
   .login__password {
     display: flex;
     flex-direction: row;
@@ -566,26 +573,68 @@ main {
   .login__text {
     text-align: center;
     margin: 20px 0 0 0; }
+  .login__form {
+    margin-top: 200px; }
 
-.batsignal {
+.batsignal-a {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 2;
   grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.batsignal-b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.batsignal-c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.batsignal-e {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
   background-position: center;
-  background-size: contain;
-  background-repeat: repeat; }
+  background-repeat: no-repeat; }
 
-.batmancard-login {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  background-image: url(../resources/batmancard-login.jpg);
+.batsignal-f {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
   background-position: center;
-  background-size: contain;
-  background-repeat: repeat; }
+  background-repeat: no-repeat; }
+
+.batsignal-g {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../resources/batsignal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .forms__list {
   list-style: none; }
@@ -721,9 +770,12 @@ p {
   /* Media querie index */
   .main__title {
     font-size: 35px; }
+  .main__height {
+    height: 170vh;
+    max-height: 1200px; }
   .welcome__grid {
     display: none;
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -750,20 +802,35 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 80vw;
-    height: 25vh;
-    margin: 0 0 20px 50px; }
+    height: 100vh;
+    margin: 35px 0 20px 50px;
+    row-gap: 30px; }
   .card-catalogue, .card-collection, .card-news {
-    width: 50vw;
-    height: 30vh;
-    margin: 10px 0 10px 25px; }
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 70vw;
+    height: 46vh;
+    max-height: 320px; }
   .card-collection {
-    width: 80vw;
-    height: 100vh; }
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 70vw;
+    height: 45vh;
+    max-height: 320px; }
   .card-news {
-    width: 80vw;
-    height: 100vh; }
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 70vw;
+    height: 45vh;
+    max-height: 320px; }
   .card-galery {
-    border: solid #3b3a36 2px; }
+    border: #cfaf34 solid 3px; }
   .titles {
     flex-direction: column;
     align-self: center;
@@ -795,22 +862,31 @@ p {
     text-align: center; }
   .login {
     width: auto;
-    height: 100vh;
+    height: 85vh;
+    max-height: 1200px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+    grid-template-areas: "batsignal-a batsignal-b batsignal-c" "batsignal-d batsignal-e batsignal-f"; }
+    .login__user {
+      margin-top: 60px; }
   .login__button {
     margin-bottom: 40px; }
-  .batsignal {
+  .batsignal-a {
+    display: none; }
+  .batsignal-b {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3; }
-  .batmancard-login {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5; }
+    grid-row-end: 3;
+    background-position: bottom; }
+  .batsignal-c {
+    display: none; }
+  .batsignal-e {
+    display: none; }
+  .batsignal-f {
+    display: none; }
+  .batsignal-g {
+    display: none; }
   /* Media querie contacto */
   h1 {
     margin: 0; }
@@ -839,45 +915,136 @@ p {
     grid-row-start: 3;
     grid-row-end: 5; }
   /* Media querie productos */
-  .section__comics {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between; }
-  .cosplay {
-    margin: 0 0 0 15px; }
-    .cosplay__img {
-      height: 80vh;
-      width: 90vw;
-      background-color: #3b3a36;
-      padding: 10px 10px 10px 10px; }
+  .mainproducts__height {
+    height: 630vh; }
+  .price {
+    font-size: 20px;
+    margin: 0 5px 0 0; }
+  .comics__grid {
+    display: grid;
+    width: 75vw;
+    height: 500vh;
+    max-height: 2300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
+    row-gap: 25px;
+    margin: 20px 0 20px 100px; }
+  .comic-spiderman {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 55vh;
+    max-height: 430px; }
+  .comic-xmen {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 55vh;
+    max-height: 430px; }
+  .comic-mandalorian {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 55vh;
+    max-height: 430px; }
+  .comic-batman {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 55vh;
+    max-height: 430px; }
+  .comic-boba {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    height: 55vh;
+    max-height: 430px; }
+  .toys__grid {
+    display: grid;
+    width: 75vw;
+    height: 250vh;
+    max-height: 1700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
+    row-gap: 35px;
+    margin: 20px 0 20px 100px; }
+  .productos-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 50vh;
+    max-height: 380px; }
+  .productos-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 50vh;
+    max-height: 380px; }
+  .productos-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 50vh;
+    max-height: 380px; }
+  .productos-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 50vh;
+    max-height: 380px; }
+  .tshirt__grid {
+    display: grid;
+    width: 75vw;
+    height: 300vh;
+    max-height: 1700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "star-wars x-files cobra-kai spiderman";
+    row-gap: 10px;
+    margin: 20px 0 20px 100px; }
+  .star-wars {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 50vh;
+    max-height: 330px; }
+  .x-files {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 50vh;
+    max-height: 330px; }
+  .cobra-kai {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 50vh;
+    max-height: 330px; }
+  .spiderman {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 50vh;
+    max-height: 330px; }
   .products__title {
     text-align: center; }
-  .img-medium {
-    height: 35vh;
-    width: 90vw;
-    padding: 10px 10px 10px 10px;
-    background-color: #3b3a36; }
-  .img-small {
-    height: 35vh;
-    width: 90vw;
-    padding: 10px 10px 10px 10px;
-    background-color: #3b3a36; }
-  .img__shirt {
-    height: 70vh;
-    width: 90vw;
-    background-color: #3b3a36;
-    padding: 10px 10px 10px 10px; }
-  .products__selection {
-    margin: 0 800px 0 15px; }
-  .label__products {
-    width: 90vw;
-    font-size: 20px; }
-  .form__products {
-    width: 80vw;
-    margin: 5px 0 5px 0;
-    font-size: 20px; }
-  .form-check {
-    width: 70vw; }
+  .products__subtitles {
+    margin: 0 0 0 130px; }
   /* Media querie espacio coleccionable */
   .collect {
     width: auto;
@@ -885,7 +1052,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "hot-toys marvel-toys" "sw-toys funko" "spidercosplay simpsons";
-    margin: 0 0 0 40px; }
+    margin: 0 0 25px 40px; }
     .collect__title {
       font-size: 40px;
       text-align: center; }

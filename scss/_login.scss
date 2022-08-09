@@ -8,18 +8,16 @@
 .login {
     display: grid;
     width: auto;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "batsignal batsignal batsignal batsignal"
-                        "batsignal batsignal batsignal batsignal"
-                        "batmancard-login batmancard-login batmancard-login batmancard-login"
-                        "batmancard-login batmancard-login batmancard-login batmancard-login";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "batsignal-a batsignal-b batsignal-c"
+                        "batsignal-d batsignal-e batsignal-f";
                         &__user{
                             display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            margin: 180px 0 0 0;
+                            flex-direction: column;
+                            align-items:center;
+                            margin-top: 150px;
                         }
                         &__password{
                             display: flex;
@@ -36,28 +34,70 @@
                             text-align: center;
                             margin: 20px 0 0 0;
                         }
+                        &__form{
+                        margin-top: 200px;
+                        }
 }
-.batsignal{
+.batsignal-a{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 2;
     grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.batsignal-b{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat:no-repeat;
+}
+.batsignal-c{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.batsignal-e{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
     grid-row-end: 3;
     background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
-.batmancard-login{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-image: url(../resources/batmancard-login.jpg);
+.batsignal-f{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
     background-position: center;
-    background-size:contain;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
-
+.batsignal-g{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .forms__list{
     list-style: none;
 }

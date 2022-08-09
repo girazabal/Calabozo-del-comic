@@ -1129,10 +1129,11 @@ p {
   .main__title {
     font-size: 30px; }
   .main__height {
-    height: 135vh; }
+    height: 140vh;
+    max-height: 1600px; }
   .welcome__grid {
     height: 50vh;
-    width: 100vw;
+    width: 90vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 4px; }
@@ -1176,19 +1177,35 @@ p {
     display: none; }
   /* Galeria grids*/
   .galery__grid {
-    width: 80vw;
-    margin: 0 0 5px 58px; }
+    width: 90vw;
+    height: 80vh;
+    max-height: 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "card-catalogue card-collection" "card-news";
+    column-gap: 25px;
+    row-gap: 30px; }
   .card-catalogue, .card-collection, .card-news {
-    width: 27vw;
-    height: 25vh; }
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 60vh;
+    max-height: 320px; }
   .card-collection {
-    width: 27vw;
-    height: 25vh; }
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 60vh;
+    max-height: 320px; }
   .card-news {
-    width: 27vw;
-    height: 25vh; }
-  .card-galery {
-    border: solid #3b3a36 5px; }
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0;
+    background-size: cover; }
   .titles {
     flex-direction: row;
     align-self: center;
@@ -1201,9 +1218,10 @@ p {
     align-items: center; }
   .header__item a {
     font-size: 25px; }
-  .img__mobile {
-    width: fit-content;
-    height: fit-content; }
+  .news-titles {
+    display: none; }
+  .news-text {
+    display: none; }
   p {
     font-size: 20px;
     text-align: center; }
@@ -1217,29 +1235,60 @@ p {
     flex-direction: row;
     justify-content: center; }
   .login {
+    display: grid;
     width: auto;
-    height: auto;
+    height: 100vh;
+    max-height: 2000px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "batsignal batsignal batsignal batsignal" "batsignal batsignal batsignal batsignal" "batmancard-login batmancard-login batmancard-login batmancard-login" "batmancard-login batmancard-login batmancard-login batmancard-login"; }
+    grid-template-rows: 1fr;
+    grid-template-areas: "batsignal-a batsignal-b batsignal-c" "batsignal-d batsignal-e batsignal-f"; }
     .login__user {
-      margin: 70px 0 0 30px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 270px; }
     .login__password {
-      margin: 0 0 30px 30px; }
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
     .login__button {
-      margin: 20px 0 50px 30px; }
-  .batsignal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 25px; }
+    .login__text {
+      text-align: center;
+      margin: 20px 0 0 0; }
+    .login__form {
+      margin-top: 200px; }
+  .batsignal-a {
+    display: none; }
+  .batsignal-b {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 45vh; }
-  .batmancard-login {
+    background-image: url(../resources/batsignal.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    height: 55vh; }
+  .batsignal-c {
+    display: none; }
+  .batsignal-e {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-image: url(../resources/batsignal.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
     height: 45vh; }
+  .batsignal-f {
+    display: none; }
+  .batsignal-g {
+    display: none; }
   /* Products */
   .section__comics {
     display: flex;

@@ -163,19 +163,16 @@
         display: none;
     }
     /* Media querie contacto */
-    h1 {
-        margin:0;
+    .contact__main{
+        height: 1030px;
     }
-    
     .contact {
         width: auto;
-        height: 80vh;
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "batsignal batsignal batsignal batsignal"
-                            "batsignal batsignal batsignal batsignal"
-                            "batmancard-login batmancard-login batmancard-login batmancard-login"
-                            "batmancard-login batmancard-login batmancard-login batmancard-login";
+        grid-template-areas: "none batsignal-2 none"
+                            "batsignal-1 none batsignal-3";
                             &__text{
                                 text-align: center;
                             }
@@ -186,22 +183,23 @@
                                 margin: 25px 0 0 0;
                                 height: 15vh;
                             }
+                            &__p{
+                                text-align: left;
+                                margin: 15px 30px 15px 30px;
+                            }
     }
-    .batsignal{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .batsignal-1{
+    display: none;
     }
-    .batmancard-login{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end:5;
+    .batsignal-2{
+    display: none;
+    }
+    .batsignal-3{
+    display: none;
     }
     /* Media querie productos */
     .mainproducts__height{
-        height: 630vh;
+        height: 5800px;
     }
     .price{
         font-size: 20px;
@@ -215,7 +213,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
-        row-gap: 25px;
+        row-gap: 20px;
         margin: 20px 0 20px 100px;
     }
     .comic-spiderman{
@@ -268,7 +266,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
-        row-gap: 35px;
+        row-gap: 20px;
         margin: 20px 0 20px 100px;
 }
 .productos-1{
@@ -309,13 +307,14 @@
 .tshirt__grid{
     display: grid;
     width: 75vw;
-    height: 300vh;
-    max-height: 1700px;
+    height: 250vh;
+    max-height: 1500px;
+    min-height: 320px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "star-wars x-files cobra-kai spiderman";
-    row-gap: 10px;
-    margin: 20px 0 20px 100px;
+    margin: 10px 0 10px 100px;
+    row-gap: 5px;
 }
 
 .star-wars{
@@ -323,7 +322,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 50vh;
+    height: 60vh;
     max-height: 330px;
 }
 
@@ -332,7 +331,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 50vh;
+    height: 60vh;
     max-height: 330px;
 }
 
@@ -341,7 +340,7 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    height: 50vh;
+    height: 60vh;
     max-height: 330px;
 }
 .spiderman{
@@ -349,14 +348,14 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    height: 50vh;
+    height: 60vh;
     max-height: 330px;
 }
 .products__title {
     text-align: center;
 }
 .products__subtitles{
-    margin: 0 0 0 130px;
+    margin: 0 0 0 145px;
 }
     /* Media querie espacio coleccionable */
     .collect {

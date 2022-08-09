@@ -1,8 +1,12 @@
 /* Pagina - contacto */
+.contact__main{
+    height: 730px;
+}
 .contact {
     display: grid;
     width: auto;
     height: 100vh;
+    max-height: 700px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "none batsignal-2 none"

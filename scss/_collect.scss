@@ -1,18 +1,18 @@
 /* Pagina - coleccionable */
 .collect {
     display: grid;
-    width: 50vw;
+    width:65vw;
     height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "hot-toys marvel-toys"
-                        "sw-toys funko"
-                        "spidercosplay simpsons";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hot-toys marvel-toys sw-toys"
+                        "funko spidercosplay simpsons";
     column-gap: 30px;
     row-gap: 30px;
-    margin: 20px 0 30px 150px;
+    margin: 20px 0 20px 0;
     &__text{
-        margin: 0 100px 0 150px;
+        margin: 0 60px 0 60px;
+        text-align: left;
     }
     &__title{
         text-align: center;
@@ -38,17 +38,17 @@
     border-radius: 3%;
 }
 .sw-toys{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
 }
 .funko{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
     background-color:#3b3a36;
@@ -56,20 +56,20 @@
     border-radius: 3%;
 }
 .spidercosplay{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
 }
 .simpsons{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-        background-color:#3b3a36;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
 }

@@ -256,7 +256,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .comic-xmen {
   grid-column-start: 2;
@@ -269,7 +270,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .comic-mandalorian {
   grid-column-start: 3;
@@ -282,7 +284,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .comic-batman {
   grid-column-start: 4;
@@ -295,7 +298,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .comic-boba {
   grid-column-start: 5;
@@ -308,7 +312,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .toys__grid {
   display: grid;
@@ -335,7 +340,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .productos-2 {
   grid-column-start: 2;
@@ -348,7 +354,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .productos-3 {
   grid-column-start: 3;
@@ -361,7 +368,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .productos-4 {
   grid-column-start: 4;
@@ -374,7 +382,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .tshirt__grid {
   display: grid;
@@ -401,7 +410,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .x-files {
   grid-column-start: 2;
@@ -414,7 +424,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .cobra-kai {
   grid-column-start: 3;
@@ -427,7 +438,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .spiderman {
   grid-column-start: 4;
@@ -440,7 +452,8 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   border: #3b3a36 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  border: #cfaf34 solid 2px; }
 
 .products__selection {
   margin: 0 650px 0 95px; }
@@ -448,20 +461,27 @@ main {
 /* Pagina - coleccionable */
 .collect {
   display: grid;
-  width: 65vw;
+  width: auto;
+  max-width: 1250px;
   height: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "hot-toys marvel-toys sw-toys" "funko spidercosplay simpsons";
-  column-gap: 30px;
+  column-gap: 25px;
   row-gap: 30px;
-  margin: 20px 0 20px 0; }
+  margin: 100px 10px 20px 10px;
+  align-self: center; }
   .collect__text {
-    margin: 0 60px 0 60px;
-    text-align: left; }
+    text-align: center; }
   .collect__title {
     text-align: center;
     margin: 20px 0 20px 0; }
+  .collect__main {
+    height: 250vh;
+    max-height: 960px; }
+
+.collect__video {
+  max-width: 315px; }
 
 .hot-toys {
   grid-column-start: 1;
@@ -470,7 +490,11 @@ main {
   grid-row-end: 2;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 .marvel-toys {
   grid-column-start: 2;
@@ -479,7 +503,11 @@ main {
   grid-row-end: 2;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 .sw-toys {
   grid-column-start: 3;
@@ -488,7 +516,11 @@ main {
   grid-row-end: 2;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 .funko {
   grid-column-start: 1;
@@ -497,7 +529,11 @@ main {
   grid-row-end: 3;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 .spidercosplay {
   grid-column-start: 2;
@@ -506,7 +542,11 @@ main {
   grid-row-end: 3;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 .simpsons {
   grid-column-start: 3;
@@ -515,7 +555,11 @@ main {
   grid-row-end: 3;
   background-color: #3b3a36;
   border: #deb928 solid 5px;
-  border-radius: 3%; }
+  border-radius: 3%;
+  width: min-content;
+  height: 33vh;
+  min-height: 265px;
+  max-height: 265px; }
 
 /* Pagina-nosotros */
 .we {
@@ -1096,39 +1140,56 @@ p {
       font-size: 20px;
       margin: 10px 40px 10px 40px;
       text-align: left; }
-  iframe {
-    width: 80vw;
-    height: 40vh; }
+    .collect__main {
+      height: 700vh;
+      max-height: 2200px; }
+  .collect__video {
+    width: 75vw;
+    height: 31vh;
+    min-height: 210px;
+    max-height: 255px; }
   .hot-toys {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2; }
+    grid-row-end: 2;
+    min-height: 170px;
+    max-height: 265px; }
   .marvel-toys {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3; }
+    grid-row-end: 3;
+    min-height: 170px;
+    max-height: 265px; }
   .sw-toys {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
-    grid-row-end: 4; }
+    grid-row-end: 4;
+    min-height: 170px;
+    max-height: 265px; }
   .funko {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: 5; }
+    grid-row-end: 5;
+    min-height: 170px;
+    max-height: 265px; }
   .spidercosplay {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 5;
-    grid-row-end: 6; }
+    grid-row-end: 6;
+    min-height: 170px;
+    max-height: 265px; }
   .simpsons {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 6;
-    grid-row-end: 7; }
+    grid-row-end: 7;
+    min-height: 170px;
+    max-height: 265px; }
   /* Media querie sobre nosotros */
   .we {
     display: grid;

@@ -1,23 +1,31 @@
 /* Pagina - coleccionable */
 .collect {
     display: grid;
-    width:65vw;
+    width:auto;
+    max-width: 1250px;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "hot-toys marvel-toys sw-toys"
                         "funko spidercosplay simpsons";
-    column-gap: 30px;
+    column-gap: 25px;
     row-gap: 30px;
-    margin: 20px 0 20px 0;
+    margin: 100px 10px 20px 10px;
+    align-self: center;
     &__text{
-        margin: 0 60px 0 60px;
-        text-align: left;
+        text-align: center;
     }
     &__title{
         text-align: center;
         margin: 20px 0 20px 0;
     }
+    &__main{
+    height: 250vh;
+    max-height: 960px;
+    }  
+}
+.collect__video{
+    max-width: 315px;
 }
 .hot-toys{
     grid-column-start: 1;
@@ -27,6 +35,10 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }
 .marvel-toys{
     grid-column-start: 2;
@@ -36,6 +48,10 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }
 .sw-toys{
     grid-column-start: 3;
@@ -45,6 +61,10 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }
 .funko{
     grid-column-start: 1;
@@ -54,6 +74,10 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }
 .spidercosplay{
     grid-column-start: 2;
@@ -63,6 +87,10 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }
 .simpsons{
     grid-column-start: 3;
@@ -72,4 +100,8 @@
     background-color:#3b3a36;
     border:$main-color solid 5px;
     border-radius: 3%;
+    width: min-content;
+    height:33vh;
+    min-height: 265px;
+    max-height: 265px;
 }

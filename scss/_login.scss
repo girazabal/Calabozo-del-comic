@@ -8,7 +8,8 @@
 .login {
     display: grid;
     width: auto;
-    height: 100vh;
+    height: 115vh;
+    max-height: 1900px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "batsignal-a batsignal-b batsignal-c"
@@ -37,6 +38,10 @@
                         &__form{
                         margin-top: 200px;
                         }
+}
+.form__size{
+    width: 50vw;
+    max-width: 300px;
 }
 .batsignal-a{
     grid-column-start: 1;

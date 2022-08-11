@@ -3,8 +3,9 @@
     /* Media querie index */
     .main__title {
         font-size: 35px;
+        margin: 10px 5px 5px 5px;
     }
-    .main__height{
+    .index__main{
         height:170vh;
         max-height: 1200px;
     }
@@ -112,6 +113,10 @@
     }
     
     /* media querie login */
+    .mainproducts__height {
+        height: 645vh;
+        max-height: 5920px;
+    }
     h1 {
         margin:0;
     }
@@ -355,7 +360,8 @@
     text-align: center;
 }
 .products__subtitles{
-    margin: 0 0 0 130px;
+    width: 50vh;
+    max-width: 300px;
 }
     /* Media querie espacio coleccionable */
     .collect {
@@ -465,8 +471,8 @@
     .main__title {
         font-size: 30px;
     }
-    .main__height{
-        height:140vh;
+    .index__main{
+        height:145vh;
         max-height: 1600px;
     }
     .welcome__grid {
@@ -674,6 +680,10 @@
         justify-content:flex-end;
         align-items: center;
     }
+    .mainproducts__height {
+        height: 245vh;
+        max-height: 1220px;
+    }
     .price{
         font-size: 20px;
         margin: 0 5px 0 0;
@@ -683,8 +693,11 @@
         margin: 20px 0 20px 0;
     }
     .products__subtitles{
-        text-align: left;
-        margin: 0 0 0 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40vh;
+        max-width: 275px;
     }
     .comics__grid {
         display: grid;
@@ -1106,4 +1119,5 @@
         width: 50px;
         height: 50px;
     }
+
 }

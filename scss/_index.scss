@@ -15,6 +15,10 @@ main {
     display: flex;
     flex-direction: column;
 }
+.index__main{
+    height: 165vh;
+    max-height: 1550px;
+}
 
 .main__title {
     text-align: center;
@@ -24,8 +28,10 @@ main {
 /* Inicio bienvenida grids */
 .welcome__grid {
     display: grid;
-    width: 75vw;
-    height: 80vh;
+    width: 90vw;
+    max-width: 1510px;
+    height: 110vh;
+    max-height: 2000px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "card-marvel card-batman card-xmen none card-boba"
@@ -137,9 +143,10 @@ main {
 /* Galeria grids */
 .galery__grid {
     display: grid;
-    width: 90vw;
-    height: 48vh;
-    max-height: 330px;
+    width: 92vw;
+    max-width:1550px;
+    height: 50vh;
+    max-height: 375px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "card-catalogue card-collection card-news"
@@ -210,5 +217,5 @@ main {
 .galery-text {
     text-align: center;
     font-size: 21px;
-    margin: 5px 5px 0 5px;
+    margin: 10px 0 0 0
 }

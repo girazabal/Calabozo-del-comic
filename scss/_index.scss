@@ -16,7 +16,7 @@ main {
     flex-direction: column;
 }
 .index__main{
-    height: 165vh;
+    height: 215vh;
     max-height: 1550px;
 }
 
@@ -145,7 +145,7 @@ main {
     display: grid;
     width: 92vw;
     max-width:1550px;
-    height: 50vh;
+    height: 40vh;
     max-height: 375px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -170,6 +170,8 @@ main {
     background-position:bottom;
     background-size:contain;
     background-repeat: no-repeat;
+    min-height: 320px;
+    max-height: 375px;
 }
 /* transformacion de card 1 */
 .card-catalogue:hover{
@@ -183,6 +185,8 @@ main {
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(../resources/comics-login.jpg);
+    min-height: 320px;
+    max-height: 375px;
     @extend .card-catalogue;
 }
 /* transformacion de card 2 */
@@ -197,6 +201,8 @@ main {
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(../resources/news.jpg);
+    min-height: 320px;
+    max-height: 375px;
     @extend .card-catalogue;
     margin: 0 30px 0 0;
 }

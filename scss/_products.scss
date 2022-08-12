@@ -31,9 +31,9 @@
     display: grid;
     width: 90vw;
     max-width: 1550px;
-    height: 70vh;
-    min-height: 250px;
-    max-height:540px;
+    height: 65vh;
+    min-height: 450px;
+    max-height:565px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
@@ -55,6 +55,8 @@
     border: #3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 450px;
+    max-height: 565px;
 }
 .comic-xmen{
     grid-column-start: 2;
@@ -68,7 +70,9 @@
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
     border-radius: 3%;
-    border: $var-color solid 2px;
+    border: $var-color solid 2px;;
+    min-height: 450px;
+    max-height: 565px;
 }
 .comic-mandalorian{
     grid-column-start: 3;
@@ -83,6 +87,8 @@
     border: #3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 450px;
+    max-height: 565px;
 }
 
 .comic-batman{
@@ -98,6 +104,8 @@
     border: #3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 450px;
+    max-height: 565px;
 }
 
 .comic-boba{
@@ -113,6 +121,8 @@
     border: #3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 450px;
+    max-height: 565px;
 }
 
 .toys__grid{
@@ -143,6 +153,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 530px;
 }
 
 .productos-2{
@@ -158,6 +170,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 530px;
 }
 
 .productos-3{
@@ -173,6 +187,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 530px;
 }
 
 .productos-4{
@@ -188,6 +204,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 530px;
 }
 .tshirt__grid{
     display: grid;
@@ -217,6 +235,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 485px;
 }
 
 .x-files{
@@ -232,6 +252,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 485px;
 }
 
 .cobra-kai{
@@ -247,6 +269,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 485px;
 }
 .spiderman{
     grid-column-start: 4;
@@ -261,6 +285,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-height: 250px;
+    max-height: 485px;
 }
 
 .products__selection {

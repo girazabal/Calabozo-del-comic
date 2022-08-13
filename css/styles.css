@@ -432,7 +432,7 @@ main {
   width: 90vw;
   max-width: 1550px;
   height: 60vh;
-  min-height: 250px;
+  min-height: 260px;
   max-height: 485px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -454,7 +454,7 @@ main {
   border: #3b3a36 solid 5px;
   border-radius: 3%;
   border: #cfaf34 solid 2px;
-  min-height: 250px;
+  min-height: 260px;
   max-height: 485px;
   min-width: 170px;
   max-width: 1550px; }
@@ -472,7 +472,7 @@ main {
   border: #3b3a36 solid 5px;
   border-radius: 3%;
   border: #cfaf34 solid 2px;
-  min-height: 250px;
+  min-height: 260px;
   max-height: 485px;
   min-width: 170px;
   max-width: 1550px; }
@@ -490,7 +490,7 @@ main {
   border: #3b3a36 solid 5px;
   border-radius: 3%;
   border: #cfaf34 solid 2px;
-  min-height: 250px;
+  min-height: 260px;
   max-height: 485px;
   min-width: 170px;
   max-width: 1550px; }
@@ -508,7 +508,7 @@ main {
   border: #3b3a36 solid 5px;
   border-radius: 3%;
   border: #cfaf34 solid 2px;
-  min-height: 250px;
+  min-height: 260px;
   max-height: 485px;
   min-width: 170px;
   max-width: 1550px; }
@@ -883,7 +883,8 @@ label {
 .btn {
   background-color: #deb928;
   border: #deb928;
-  background-image: radial-gradient(#deb928, #cfaf34); }
+  background-image: radial-gradient(#deb928, #cfaf34);
+  margin-bottom: 10px; }
 
 .btn-primary {
   color: #242320;

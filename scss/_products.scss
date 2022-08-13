@@ -229,9 +229,9 @@
     display: grid;
     width: 90vw;
     max-width: 1550px;
-    height: 60vh;
-    min-height: 300px;
-    max-height: 475px;
+    height: 75vh;
+    min-height: 400px;
+    max-height: 490px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "star-wars x-files cobra-kai spiderman";
@@ -253,8 +253,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
-    min-height: 300px;
-    max-height: 475px;
+    min-height: 400px;
+    max-height: 490px;
     min-width: 170px;
     max-width: 1550px;
 }
@@ -272,8 +272,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
-    min-height: 300px;
-    max-height: 475px;
+    min-height: 400px;
+    max-height: 490px;
     min-width: 170px;
     max-width: 1550px;
 }
@@ -291,8 +291,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
-    min-height: 300px;
-    max-height: 475px;
+    min-height: 400px;
+    max-height: 490px;
     min-width: 170px;
     max-width: 1550px;
 }
@@ -309,8 +309,8 @@
     border:#3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
-    min-height: 300px;
-    max-height: 475px;
+    min-height: 400px;
+    max-height: 490px;
     min-width: 170px;
     max-width: 1550px;
 }

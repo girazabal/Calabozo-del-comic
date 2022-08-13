@@ -169,11 +169,15 @@
     }
     /* Media querie contacto */
     .contact__main{
-        height: 1030px;
+        height: 170vh;
+        min-height: 1020px;
+        max-height: 1020px;
     }
     .contact {
         width: auto;
         height: 100vh;
+        min-height: 150px;
+        max-height: 300px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "none batsignal-2 none"
@@ -190,7 +194,7 @@
                             }
                             &__p{
                                 text-align: left;
-                                margin: 15px 30px 15px 30px;
+                                margin: 10px 30px 15px 30px;
                             }
     }
     .batsignal-1{
@@ -720,7 +724,8 @@
     .comics__grid {
         display: grid;
         width: 90vw;
-        height: 48vh;
+        height: 35vh;
+        min-height: 100px;
         max-height: 320px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -742,6 +747,10 @@
         background-repeat: no-repeat;
         border: #3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 80px;
+        max-width: 120px;
+        min-height: 100px;
+        max-height: 275px;
     }
     .comic-xmen{
         grid-column-start: 2;
@@ -755,6 +764,10 @@
         background-repeat: no-repeat;
         border: #3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 80px;
+        max-width: 120px;
+        min-height: 50px;
+        max-height: 275px;
     }
     .comic-mandalorian{
         grid-column-start: 3;
@@ -768,6 +781,10 @@
         background-repeat: no-repeat;
         border: #3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 80px;
+        max-width: 120px;
+        min-height: 100px;
+        max-height: 275px;
     }
     
     .comic-batman{
@@ -782,6 +799,10 @@
         background-repeat: no-repeat;
         border: #3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 80px;
+        max-width: 120px;
+        min-height: 100px;
+        max-height: 275px;
     }
     
     .comic-boba{
@@ -796,12 +817,17 @@
         background-repeat: no-repeat;
         border: #3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 80px;
+        max-width: 120px;
+        min-height: 100px;
+        max-height: 275px;
     }
     
     .toys__grid{
             display: grid;
             width: 90vw;
             height: 65vh;
+            min-height: 100px;
             max-height: 300px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr;
@@ -823,6 +849,11 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 250px;
+        min-height: 100px;
+        max-height: 300px;
+        
     }
     
     .productos-2{
@@ -837,6 +868,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 250px;
+        min-height: 100px;
+        max-height: 300px;
     }
     
     .productos-3{
@@ -851,6 +886,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 250px;
+        min-height: 100px;
+        max-height: 300px;
     }
     
     .productos-4{
@@ -865,11 +904,16 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 10px;
+        max-width: 250px;
+        min-height: 100px;
+        max-height: 300px;
     }
     .tshirt__grid{
         display: grid;
         width: 90vw;
         height: 53vh;
+        min-height: 100px;
         max-height: 260px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -891,6 +935,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 100px;
+        max-height: 260px;
     }
     
     .x-files{
@@ -905,6 +953,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 100px;
+        max-height: 260px;
     }
     
     .cobra-kai{
@@ -919,6 +971,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 100px;
+        max-height: 260px;
     }
     .spiderman{
         grid-column-start: 4;
@@ -932,6 +988,10 @@
         background-repeat: no-repeat;
         border:#3b3a36 solid 5px;
         border-radius: 3%;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 100px;
+        max-height: 260px;
     }
     
     .products__selection {

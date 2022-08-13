@@ -264,6 +264,8 @@ main {
   border: #3b3a36 solid 5px;
   border-radius: 3%;
   border: #cfaf34 solid 2px;
+  min-width: 170px;
+  max-width: 1550px;
   min-height: 450px;
   max-height: 565px; }
 
@@ -281,7 +283,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 450px;
-  max-height: 565px; }
+  max-height: 565px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .comic-mandalorian {
   grid-column-start: 3;
@@ -297,7 +301,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 450px;
-  max-height: 565px; }
+  max-height: 565px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .comic-batman {
   grid-column-start: 4;
@@ -313,7 +319,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 450px;
-  max-height: 565px; }
+  max-height: 565px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .comic-boba {
   grid-column-start: 5;
@@ -329,7 +337,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 450px;
-  max-height: 565px; }
+  max-height: 565px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .toys__grid {
   display: grid;
@@ -359,7 +369,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 530px; }
+  max-height: 530px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .productos-2 {
   grid-column-start: 2;
@@ -375,7 +387,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 530px; }
+  max-height: 530px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .productos-3 {
   grid-column-start: 3;
@@ -391,7 +405,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 530px; }
+  max-height: 530px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .productos-4 {
   grid-column-start: 4;
@@ -407,7 +423,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 530px; }
+  max-height: 530px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .tshirt__grid {
   display: grid;
@@ -437,7 +455,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 485px; }
+  max-height: 485px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .x-files {
   grid-column-start: 2;
@@ -453,7 +473,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 485px; }
+  max-height: 485px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .cobra-kai {
   grid-column-start: 3;
@@ -469,7 +491,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 485px; }
+  max-height: 485px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .spiderman {
   grid-column-start: 4;
@@ -485,7 +509,9 @@ main {
   border-radius: 3%;
   border: #cfaf34 solid 2px;
   min-height: 250px;
-  max-height: 485px; }
+  max-height: 485px;
+  min-width: 170px;
+  max-width: 1550px; }
 
 .products__selection {
   margin: 0 650px 0 95px; }
@@ -1001,10 +1027,14 @@ p {
     display: none; }
   /* Media querie contacto */
   .contact__main {
-    height: 1030px; }
+    height: 170vh;
+    min-height: 1020px;
+    max-height: 1020px; }
   .contact {
     width: auto;
     height: 100vh;
+    min-height: 150px;
+    max-height: 300px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "none batsignal-2 none" "batsignal-1 none batsignal-3"; }
@@ -1018,7 +1048,7 @@ p {
       height: 15vh; }
     .contact__p {
       text-align: left;
-      margin: 15px 30px 15px 30px; }
+      margin: 10px 30px 15px 30px; }
   .batsignal-1 {
     display: none; }
   .batsignal-2 {
@@ -1444,7 +1474,8 @@ p {
   .comics__grid {
     display: grid;
     width: 90vw;
-    height: 48vh;
+    height: 35vh;
+    min-height: 100px;
     max-height: 320px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -1463,7 +1494,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 100px;
+    max-height: 275px; }
   .comic-xmen {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1475,7 +1510,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 50px;
+    max-height: 275px; }
   .comic-mandalorian {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -1487,7 +1526,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 100px;
+    max-height: 275px; }
   .comic-batman {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -1499,7 +1542,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 100px;
+    max-height: 275px; }
   .comic-boba {
     grid-column-start: 5;
     grid-column-end: 6;
@@ -1511,11 +1558,16 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 100px;
+    max-height: 275px; }
   .toys__grid {
     display: grid;
     width: 90vw;
     height: 65vh;
+    min-height: 100px;
     max-height: 300px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -1534,7 +1586,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 300px; }
   .productos-2 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1546,7 +1602,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 300px; }
   .productos-3 {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -1558,7 +1618,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 300px; }
   .productos-4 {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -1570,11 +1634,16 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 10px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 300px; }
   .tshirt__grid {
     display: grid;
     width: 90vw;
     height: 53vh;
+    min-height: 100px;
     max-height: 260px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -1593,7 +1662,11 @@ p {
     background-position: ctop;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 260px; }
   .x-files {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1605,7 +1678,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 260px; }
   .cobra-kai {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -1617,7 +1694,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 260px; }
   .spiderman {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -1629,7 +1710,11 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     border: #3b3a36 solid 5px;
-    border-radius: 3%; }
+    border-radius: 3%;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 260px; }
   .products__selection {
     margin: 0 650px 0 95px; }
   /* Contact */

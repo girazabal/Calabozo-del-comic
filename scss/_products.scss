@@ -55,6 +55,8 @@
     border: #3b3a36 solid 5px;
     border-radius: 3%;
     border: $var-color solid 2px;
+    min-width: 170px;
+    max-width: 1550px;
     min-height: 450px;
     max-height: 565px;
 }
@@ -73,6 +75,8 @@
     border: $var-color solid 2px;;
     min-height: 450px;
     max-height: 565px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 .comic-mandalorian{
     grid-column-start: 3;
@@ -89,6 +93,8 @@
     border: $var-color solid 2px;
     min-height: 450px;
     max-height: 565px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .comic-batman{
@@ -106,6 +112,8 @@
     border: $var-color solid 2px;
     min-height: 450px;
     max-height: 565px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .comic-boba{
@@ -123,6 +131,8 @@
     border: $var-color solid 2px;
     min-height: 450px;
     max-height: 565px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .toys__grid{
@@ -155,6 +165,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 530px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .productos-2{
@@ -172,6 +184,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 530px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .productos-3{
@@ -189,6 +203,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 530px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .productos-4{
@@ -206,6 +222,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 530px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 .tshirt__grid{
     display: grid;
@@ -237,6 +255,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 485px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .x-files{
@@ -254,6 +274,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 485px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .cobra-kai{
@@ -271,6 +293,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 485px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 .spiderman{
     grid-column-start: 4;
@@ -287,6 +311,8 @@
     border: $var-color solid 2px;
     min-height: 250px;
     max-height: 485px;
+    min-width: 170px;
+    max-width: 1550px;
 }
 
 .products__selection {

@@ -217,8 +217,9 @@
     .comics__grid {
         display: grid;
         width: 75vw;
-        height:500vh;
-        max-height: 2300px;
+        height:600vh;
+        min-height: 200px;
+        max-height: 2450px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
@@ -283,7 +284,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 50vh;
+    height: 55vh;
     max-height: 380px;
 }
 
@@ -292,7 +293,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 50vh;
+    height: 55vh;
     max-height: 380px;
 }
 
@@ -301,7 +302,7 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    height: 50vh;
+    height: 55vh;
     max-height: 380px;
 }
 
@@ -310,7 +311,7 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    height: 50vh;
+    height: 55vh;
     max-height: 380px;
 }
 .tshirt__grid{
@@ -331,8 +332,8 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 60vh;
-    max-height: 330px;
+    height: 65vh;
+    max-height: 340px;
 }
 
 .x-files{
@@ -340,8 +341,8 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 60vh;
-    max-height: 330px;
+    height: 65vh;
+    max-height: 340px;
 }
 
 .cobra-kai{
@@ -349,16 +350,16 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    height: 60vh;
-    max-height: 330px;
+    height: 65vh;
+    max-height: 340px;
 }
 .spiderman{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    height: 60vh;
-    max-height: 330px;
+    height: 65vh;
+    max-height: 340px;
 }
 .products__title {
     text-align: center;

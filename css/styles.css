@@ -17,7 +17,7 @@ main {
 
 .index__main {
   height: 215vh;
-  max-height: 1920px; }
+  max-height: 1720px; }
 
 .main__title {
   text-align: center;
@@ -908,8 +908,8 @@ p {
     font-size: 35px;
     margin: 10px 5px 5px 5px; }
   .index__main {
-    height: 170vh;
-    max-height: 1200px; }
+    height: 190vh;
+    max-height: 1600px; }
   .welcome__grid {
     display: none;
     height: 100vh;
@@ -1208,12 +1208,12 @@ p {
       text-align: left; }
     .collect__main {
       height: 700vh;
-      min-height: 2000px;
+      min-height: 1700px;
       max-height: 2100px; }
   .collect__video {
     width: 75vw;
     height: 31vh;
-    min-height: 210px;
+    min-height: 200px;
     max-height: 255px; }
   .hot-toys {
     grid-column-start: 1;

@@ -17,7 +17,7 @@ main {
 
 .index__main {
   height: 215vh;
-  max-height: 2000px; }
+  max-height: 1920px; }
 
 .main__title {
   text-align: center;
@@ -30,7 +30,7 @@ main {
   width: 90vw;
   max-width: 1510px;
   height: 110vh;
-  max-height: 2000px;
+  max-height: 1800px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "card-marvel card-batman card-xmen none card-boba" "card-marvel card-batman card-xmen card-boba" "card-crypt card-venom card-mandalorian card-spider" "card-crypt card-venom card-mandalorian card-spider";
@@ -134,7 +134,7 @@ main {
   max-width: 1550px;
   height: 40vh;
   min-height: 290px;
-  max-height: 375px;
+  max-height: 450px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "card-catalogue card-collection card-news" "card-catalogue card-collection card-news";
@@ -157,7 +157,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 320px;
-  max-height: 400px; }
+  max-height: 450px; }
 
 /* transformacion de card 1 */
 .card-catalogue:hover, .card-collection:hover, .card-news:hover {
@@ -170,9 +170,9 @@ main {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-image: url(../resources/comics-login.jpg);
+  background-image: url(../resources/card-collection.jpg);
   min-height: 320px;
-  max-height: 400px; }
+  max-height: 450px; }
 
 /* transformacion de card 2 */
 .card-collection:hover {
@@ -185,9 +185,9 @@ main {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-image: url(../resources/news.jpg);
+  background-image: url(../resources/card-news.jpg);
   min-height: 320px;
-  max-height: 400px;
+  max-height: 450px;
   margin: 0 30px 0 0; }
 
 /* transformacion de card 3 */
@@ -212,7 +212,7 @@ main {
 /* Pagina productos */
 .mainproducts__height {
   height: 250vh;
-  max-height: 1920px; }
+  max-height: 2020px; }
 
 .buy-card {
   display: flex;
@@ -242,9 +242,9 @@ main {
   display: grid;
   width: 90vw;
   max-width: 1550px;
-  height: 65vh;
+  height: 60vh;
   min-height: 450px;
-  max-height: 565px;
+  max-height: 560px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "comic-spiderman comics-xmen comic-mandalorian comic-batman comic-boba";
@@ -348,7 +348,7 @@ main {
   max-width: 1550px;
   height: 70vh;
   min-height: 300px;
-  max-height: 590px;
+  max-height: 610px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "productos-1 productos-2 productos-3 productos-4";
@@ -432,7 +432,7 @@ main {
   display: grid;
   width: 90vw;
   max-width: 1550px;
-  height: 60vh;
+  height: 55vh;
   min-height: 400px;
   max-height: 475px;
   grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -17,7 +17,7 @@ main {
 }
 .index__main{
     height: 215vh;
-    max-height: 2000px;
+    max-height: 1920px;
 }
 
 .main__title {
@@ -31,7 +31,7 @@ main {
     width: 90vw;
     max-width: 1510px;
     height: 110vh;
-    max-height: 2000px;
+    max-height: 1800px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "card-marvel card-batman card-xmen none card-boba"
@@ -147,7 +147,7 @@ main {
     max-width:1550px;
     height: 40vh;
     min-height: 290px;
-    max-height: 375px;
+    max-height: 450px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "card-catalogue card-collection card-news"
@@ -172,7 +172,7 @@ main {
     background-size:contain;
     background-repeat: no-repeat;
     min-height: 320px;
-    max-height: 400px;
+    max-height: 450px;
 }
 /* transformacion de card 1 */
 .card-catalogue:hover{
@@ -185,9 +185,9 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-image: url(../resources/comics-login.jpg);
+    background-image: url(../resources/card-collection.jpg);
     min-height: 320px;
-    max-height: 400px;
+    max-height: 450px;
     @extend .card-catalogue;
 }
 /* transformacion de card 2 */
@@ -201,9 +201,9 @@ main {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-image: url(../resources/news.jpg);
+    background-image: url(../resources/card-news.jpg);
     min-height: 320px;
-    max-height: 400px;
+    max-height: 450px;
     @extend .card-catalogue;
     margin: 0 30px 0 0;
 }

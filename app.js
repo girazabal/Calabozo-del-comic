@@ -1,4 +1,5 @@
-const contenedor = document.getElementById('comic-contenedor')
+//Interactuar con HTML
+/* const contenedor = document.getElementById('comic-contenedor')
 
 
 comics.forEach(comic=>{
@@ -13,4 +14,18 @@ comics.forEach(comic=>{
                         </article>
     `;
     contenedor.appendChild(article);
+})
+ */
+//Incorporar eventos
+
+const form = document.getElementById('form');
+const inputEmail = document.getElementById('inputEmail');
+const inputPassword = document.getElementById('inputPassword');
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    const email = inputEmail.value;
+    const password = inputPassword.value;
+
+    console.log(email, password);
 })

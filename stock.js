@@ -61,3 +61,12 @@ const juguetes = [
         className: 'productos-4',
     }
 ]
+
+console.log(comics?.cantidad || 'El producto no se encuentra en stock');
+
+comics1 = {...comics, cantidad: 10, fabricacion: 'Importado'};
+
+console.log(comics1);
+
+
+

@@ -51,8 +51,10 @@ juguetes.forEach(juguete => {
     })
 });
 
+
+
 const obtenerCarrito = () => {
-    //Hay que trar los que esten en el carrito
+    //Hay que traer los que esten en el carrito
     let productosEnCarrito = localStorage.getItem('carrito');
     let arrayCarrito = JSON.parse(productosEnCarrito) || [];
     let textoComics = '';
@@ -61,7 +63,6 @@ const obtenerCarrito = () => {
     });
     return textoComics;
 }
-
 
 //Recibe la key carrito y un producto a guardar en el
 const addToLocalStorage = (key, producto) => {
@@ -88,3 +89,5 @@ carrito.addEventListener('click', () => {
         denyButtonText: "Eliminar",
     })
 })
+
+

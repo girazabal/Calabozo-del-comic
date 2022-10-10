@@ -20,10 +20,14 @@ comics.forEach(comic => {
         addToLocalStorage('carrito', comic);
         Swal.fire({
             icon: 'success',
-            title: 'Producto agregado al carrito',
+            title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
+            background: '#242320',
+            iconColor: '#deb928',
+            confirmButtonColor: '#deb928',
         })
     })
 });
+
 
 
 const juguetesContenedor = document.getElementById('juguetes-contenedor');
@@ -46,12 +50,13 @@ juguetes.forEach(juguete => {
         addToLocalStorage('carrito', juguete);
         Swal.fire({
             icon: 'success',
-            title: 'Producto agregado al carrito',
+            title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
+            background: '#242320',
+            iconColor: '#deb928',
+            confirmButtonColor: '#deb928',
         })
     })
 });
-
-
 
 const obtenerCarrito = () => {
     //Hay que traer los que esten en el carrito
@@ -59,10 +64,11 @@ const obtenerCarrito = () => {
     let arrayCarrito = JSON.parse(productosEnCarrito) || [];
     let textoComics = '';
     arrayCarrito.forEach(producto => {
-        textoComics = textoComics + ' ' + '<p>' + producto.titulo + '    $' + producto.precio + '</p>';
+        textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' -    $' + producto.precio + ' - Unid.: '+producto.cantidad +'</p>';
     });
     return textoComics;
 }
+
 
 //Recibe la key carrito y un producto a guardar en el
 const addToLocalStorage = (key, producto) => {
@@ -78,16 +84,43 @@ const addToLocalStorage = (key, producto) => {
     localStorage.setItem(key, arrayCarritoJson);
 }
 
+const validarProductoRepetido = (comicId)=> {
+    const comicRepetido = arrayCarritoJson.find(comic =>comic.id===comicId);
+    if(comicRepetido){
+        productoRepetido.cantidad++;
+    }
+    else{
+        arrayCarritoJson(comicId);
+    }
+};
+
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
     Swal.fire({
         icon: 'success',
-        title: 'Este es tu carrito',
+        title: '<h2 class="swal-title">Este es tu carrito</h2>',
         html: obtenerCarrito(),
-        confirmButtonText: "Confirmar compra",
+        confirmButtonText: 'Confirmar compra',
         denyButtonText: "Eliminar",
-    })
-})
+        position: 'top-end',
+        background: '#242320',
+        iconColor: '#deb928',
+        confirmButtonColor: '#deb928',
+    }).then(function(isConfirm){
+        if (isConfirm){
+            Swal.fire({
+                icon: 'success',
+                title: '<h2 class"swal-title">Su compra ha sido realizada con exito</h2>',
+                timer: 5000,
+                position: 'top-end',
+                background: '#242320',
+                iconColor: '#deb928',
+                confirmButtonColor: '#deb928',
+            })
+        }
+    }
+)})
+
 
 

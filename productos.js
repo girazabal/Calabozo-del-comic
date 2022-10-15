@@ -1,7 +1,8 @@
 // const Swal = require('sweetalert2')
 
 //Interactuar con HTML
-const contenedor = document.getElementById('comic-contenedor')
+const contenedor = document.getElementById('comic-contenedor');
+
 
 comics.forEach(comic => {
     const article = document.createElement('article');
@@ -11,23 +12,23 @@ comics.forEach(comic => {
                         <article class="buy-card">
                             <h5 class="title">${comic.titulo}</h5>
                             <p class="price">$${comic.precio}</p>
-                            <button type="button" class="btn btn-primary btn-sm" id= boton${comic.id}>Comprar</button>
+                            <button type="button" class="btn btn-primary btn-sm" id=${comic.id}>Comprar</button>
                         </article>
     `;
     contenedor.appendChild(article);
-    const boton = document.getElementById(`boton${comic.id}`)
+    const boton = document.getElementById(`${comic.id}`)
     boton.addEventListener('click', () => {
-        addToLocalStorage('carrito', comic);
         Swal.fire({
             icon: 'success',
             title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
             background: '#242320',
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',
-        })
+        });
+        addToLocalStorage('carrito',comic);
+        precioFinal();
     })
 });
-
 
 
 const juguetesContenedor = document.getElementById('juguetes-contenedor');
@@ -58,6 +59,7 @@ juguetes.forEach(juguete => {
     })
 });
 
+
 const obtenerCarrito = () => {
     //Hay que traer los que esten en el carrito
     let productosEnCarrito = localStorage.getItem('carrito');
@@ -71,7 +73,7 @@ const obtenerCarrito = () => {
 
 
 //Recibe la key carrito y un producto a guardar en el
-const addToLocalStorage = (key, producto) => {
+function addToLocalStorage(key, producto) {
     //trae lo que hay en el carrito
     let arrayCarritoJson = localStorage.getItem(key); //devueleve null cuando no existe
     //lo convierte en objeto
@@ -84,43 +86,60 @@ const addToLocalStorage = (key, producto) => {
     localStorage.setItem(key, arrayCarritoJson);
 }
 
-const validarProductoRepetido = (comicId)=> {
-    const comicRepetido = arrayCarritoJson.find(comic =>comic.id===comicId);
-    if(comicRepetido){
-        productoRepetido.cantidad++;
-    }
-    else{
-        arrayCarritoJson(comicId);
-    }
+const precioFinal = ()=>{
+    const productosEnCarrito = localStorage.getItem('carrito');
+    const arrayCarrito = JSON.parse(productosEnCarrito)|| [];
+    arrayCarritoJson = JSON.stringify(arrayCarrito);
+    const total = arrayCarrito.reduce((acc, comic) => acc + comic.precio, 0);
+    console.log(total);
 };
+
+// const validarComicRepetido = (comicId)=>{
+//     const productosEnCarrito = localStorage.getItem('carrito');
+//     const arrayCarrito = JSON.parse(productosEnCarrito) || [];
+//     arrayCarritoJson = JSON.stringify(arrayCarrito);
+//     const comicRepetido = arrayCarrito.some(comic => comic.id == comicId);
+//     if(comicRepetido){
+//         comicRepetido.cantidad++;
+//         console.log(comicsRepetidos);
+//     }else{
+//         arrayCarrito.push(comicId);
+//     }
+// };
 
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
     Swal.fire({
-        icon: 'success',
         title: '<h2 class="swal-title">Este es tu carrito</h2>',
         html: obtenerCarrito(),
-        confirmButtonText: 'Confirmar compra',
-        denyButtonText: "Eliminar",
+        showDenyButton: true,
+        showCancelButton: true,
         position: 'top-end',
         background: '#242320',
-        iconColor: '#deb928',
         confirmButtonColor: '#deb928',
-    }).then(function(isConfirm){
-        if (isConfirm){
-            Swal.fire({
-                icon: 'success',
-                title: '<h2 class"swal-title">Su compra ha sido realizada con exito</h2>',
-                timer: 5000,
-                position: 'top-end',
-                background: '#242320',
-                iconColor: '#deb928',
-                confirmButtonColor: '#deb928',
-            })
-        }
+        confirmButtonText: 'Continuar comprando',
+        denyButtonText: `Finalizar compra`,
+    }).then((result) => {
+    if (result.isConfirmed) {
+    } else if (result.isDenied) {
+        Swal.fire({
+            icon: 'success',
+            title: '<h2 class"swal-title">Su compra ha sido realizada con exito</h2>',
+            timer: 5000,
+            position: 'top-end',
+            background: '#242320',
+            iconColor: '#deb928',
+            confirmButtonColor: '#deb928',
+        })
+        localStorage.clear();
     }
-)})
+    })
+    }
+)
+
+
+
 
 
 

@@ -78,4 +78,3 @@ comics1 = {...comics, cantidad: 10, fabricacion: 'Importado'};
 console.log(comics1);
 
 
-

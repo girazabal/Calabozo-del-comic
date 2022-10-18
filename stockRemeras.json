@@ -1,0 +1,30 @@
+[
+    {
+        "id":10,
+        "titulo": "Star wars",
+        "precio": 3500,
+        "className": "star-wars",
+        "cantidad": 1
+    },
+    {
+        "id":11,
+        "titulo": "X-files",
+        "precio": 3500,
+        "className": "x-files",
+        "cantidad": 1
+    },
+    {
+        "id":12,
+        "titulo": "Cobra-kai",
+        "precio": 3500,
+        "className": "cobra-kai",
+        "cantidad": 1
+    },
+    {
+        "id":13,
+        "titulo": "Spiderman",
+        "precio": 3500,
+        "className": "spiderman",
+        "cantidad": 1
+    }
+]

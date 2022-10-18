@@ -887,6 +887,9 @@ label {
   color: #deb928;
   font-family: 'Space Grotesk', sans-serif; }
 
+.swal-title {
+  color: #242320; }
+
 .btn {
   background-color: #deb928;
   border: #deb928;

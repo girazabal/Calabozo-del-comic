@@ -1,7 +1,18 @@
-// const Swal = require('sweetalert2')
-
 //Interactuar con HTML
+const obtenerComics = async () => {
+    try {
+        const response = await fetch('/stockComics.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log('Error ', error)
+    }
+}
+const mostrarComics = async () =>{
+
 const contenedor = document.getElementById('comic-contenedor');
+
+const comics = await obtenerComics();
 
 
 comics.forEach(comic => {
@@ -25,13 +36,29 @@ comics.forEach(comic => {
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',
         });
-        addToLocalStorage('carrito',comic);
+        addToLocalStorage('carrito', comic);
         precioFinal();
     })
 });
+}
 
+mostrarComics();
+obtenerComics();
 
+const obtenerJuguetes = async () => {
+    try {
+        const response = await fetch('/stockJuguetes.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log('Error ', error)
+    }
+}
+
+const mostrarJuguetes = async () =>{
 const juguetesContenedor = document.getElementById('juguetes-contenedor');
+
+const juguetes = await obtenerJuguetes();
 
 juguetes.forEach(juguete => {
     const article = document.createElement('article');
@@ -48,17 +75,67 @@ juguetes.forEach(juguete => {
     const boton = document.getElementById(`boton${juguete.id}`);
 
     boton.addEventListener('click', () => {
-        addToLocalStorage('carrito', juguete);
         Swal.fire({
             icon: 'success',
             title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
             background: '#242320',
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',
-        })
+        });
+        addToLocalStorage('carrito', juguete);
+        precioFinal();
     })
 });
+}
 
+mostrarJuguetes();
+obtenerJuguetes();
+
+const obtenerRemeras = async () => {
+    try {
+        const response = await fetch('/stockRemeras.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log('Error ', error)
+    }
+}
+
+const mostrarRemeras = async () =>{
+
+const remerasContenedor = document.getElementById('remeras-contenedor');
+
+const remeras = await obtenerRemeras();
+
+remeras.forEach(remera => {
+    const article = document.createElement('article');
+    article.classList.add('buy-card');
+    article.classList.add(remera.className);
+    article.innerHTML += `
+                        <article class="buy-card">
+                                    <h5 class="title">${remera.titulo}</h5>
+                                    <p class="price">${remera.precio}</p>
+                                    <button type="button" class="btn btn-primary btn-sm" id= boton${remera.id}>Comprar</button>
+                                </article>
+                        `;
+    remerasContenedor.appendChild(article);
+    const boton = document.getElementById(`boton${remera.id}`);
+
+    boton.addEventListener('click', () => {
+        Swal.fire({
+            icon: 'success',
+            title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
+            background: '#242320',
+            iconColor: '#deb928',
+            confirmButtonColor: '#deb928',
+        });
+        addToLocalStorage('carrito', remera);
+        precioFinal();
+    })
+});
+}
+
+mostrarRemeras();
 
 const obtenerCarrito = () => {
     //Hay que traer los que esten en el carrito
@@ -66,7 +143,7 @@ const obtenerCarrito = () => {
     let arrayCarrito = JSON.parse(productosEnCarrito) || [];
     let textoComics = '';
     arrayCarrito.forEach(producto => {
-        textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' -    $' + producto.precio + ' - Unid.: '+producto.cantidad +'</p>';
+        textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' -    $' + producto.precio + ' - Unid.: ' + producto.cantidad + '</p>';
     });
     return textoComics;
 }
@@ -79,34 +156,36 @@ function addToLocalStorage(key, producto) {
     //lo convierte en objeto
     let arrayCarrito = JSON.parse(arrayCarritoJson) || [];
     //lo agrega al array
-    arrayCarrito.push(producto);
+//    arrayCarrito.push(producto);
+    arrayProducto = validarProductoRepetido(producto, arrayCarrito);
     //lo vuelve a hacer un JSON
     arrayCarritoJson = JSON.stringify(arrayCarrito);
     //lo setea en el localStorage
     localStorage.setItem(key, arrayCarritoJson);
 }
 
-const precioFinal = ()=>{
-    const productosEnCarrito = localStorage.getItem('carrito');
-    const arrayCarrito = JSON.parse(productosEnCarrito)|| [];
-    arrayCarritoJson = JSON.stringify(arrayCarrito);
-    const total = arrayCarrito.reduce((acc, comic) => acc + comic.precio, 0);
-    console.log(total);
-};
 
-// const validarComicRepetido = (comicId)=>{
-//     const productosEnCarrito = localStorage.getItem('carrito');
-//     const arrayCarrito = JSON.parse(productosEnCarrito) || [];
-//     arrayCarritoJson = JSON.stringify(arrayCarrito);
-//     const comicRepetido = arrayCarrito.some(comic => comic.id == comicId);
-//     if(comicRepetido){
-//         comicRepetido.cantidad++;
-//         console.log(comicsRepetidos);
-//     }else{
-//         arrayCarrito.push(comicId);
-//     }
-// };
+    const validarProductoRepetido = (productoNuevo, arrayCarrito) => {
+        let indice = arrayCarrito.findIndex((prod) => prod.id === productoNuevo.id);
+        console.log(indice);
+        if(indice !== -1) {
+            console.log('Producto repetido');
+            arrayCarrito[indice].cantidad++
+            console.log(arrayCarrito[indice]);
+        }else{
+            console.log('Producto nuevo');
+            arrayCarrito.push(productoNuevo);
+        }
+        return arrayCarrito;
+    }
 
+    const precioFinal = () => {
+        const productosEnCarrito = localStorage.getItem('carrito');
+        const arrayCarrito = JSON.parse(productosEnCarrito) || [];
+        arrayCarritoJson = JSON.stringify(arrayCarrito);
+        const total = arrayCarrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
+        console.log(total);
+    };
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
@@ -131,6 +210,19 @@ carrito.addEventListener('click', () => {
             background: '#242320',
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',
+        }).then((result) => {
+            if(result.isConfirmed) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '<h2 class"swal-title">El precio final de su compra es de </h2>',
+                    timer: 5000,
+                    position: 'top-end',
+                    background: '#242320',
+                    iconColor: '#deb928',
+                    confirmButtonColor: '#deb928',
+                    html: precioFinal(),
+                })
+            }
         })
         localStorage.clear();
     }

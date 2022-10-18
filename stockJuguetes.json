@@ -1,0 +1,30 @@
+[
+    {
+        "id": 6,
+        "titulo": "Homero Simpson",
+        "precio": 25000,
+        "className": "productos-1",
+        "cantidad": 1
+    },
+    {
+        "id":7,
+        "titulo": "Casco Darth Vader",
+        "precio": 50000,
+        "className": "productos-2",
+        "cantidad": 1
+    },
+    {
+        "id":8,
+        "titulo": "Classic Batman",
+        "precio": 10000,
+        "className": "productos-3",
+        "cantidad": 1
+    },
+    {
+        "id":9,
+        "titulo": "Spiderman 2(2004)",
+        "precio": 20000,
+        "className": "productos-4",
+        "cantidad": 1
+    }
+]

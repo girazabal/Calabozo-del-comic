@@ -27,11 +27,12 @@ comics.forEach(comic => {
                         </article>
     `;
     contenedor.appendChild(article);
+
     const boton = document.getElementById(`${comic.id}`)
     boton.addEventListener('click', () => {
         Swal.fire({
             icon: 'success',
-            title: '<h2 class="swal-title">Producto agregado al carrito</h2>',
+            title:'<h2 class="swal-title">Producto agregado al carrito</h2>',
             background: '#242320',
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',

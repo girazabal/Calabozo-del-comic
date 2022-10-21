@@ -1,8 +1,7 @@
 //Interactuar con HTML
 const obtenerComics = async () => {
     try {
-        const response = await fetch('https://girazabal.github.io/Calabozo-del-comic/pages/nuestros-productos.html');
-//        const response = await fetch('/stockComics.json');
+        const response = await fetch('/stockComics.json');
         const data = await response.json();
         return data;
     } catch (error) {

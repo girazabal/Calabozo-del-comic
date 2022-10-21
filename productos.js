@@ -1,4 +1,4 @@
-//Interactuar con HTML
+//Incorporacion de fetch - llamada archivo json
 const obtenerComics = async () => {
     try {
         const response = await fetch('/stockComics.json');
@@ -8,12 +8,12 @@ const obtenerComics = async () => {
         console.log('Error ', error)
     }
 }
+//Interactuar con Html - DOM
 const mostrarComics = async () =>{
 
 const contenedor = document.getElementById('comic-contenedor');
 
 const comics = await obtenerComics();
-
 
 comics.forEach(comic => {
     const article = document.createElement('article');
@@ -23,7 +23,7 @@ comics.forEach(comic => {
                         <article class="buy-card">
                             <h5 class="title">${comic.titulo}</h5>
                             <p class="price">$${comic.precio}</p>
-                            <button type="button" class="btn btn-primary btn-sm" id=${comic.id}>Comprar</button>
+                            <button type="button" class="btn btn-primary btn-sm" id=${comic.id}>Agregar al carrito</button>
                         </article>
     `;
     contenedor.appendChild(article);
@@ -35,7 +35,7 @@ comics.forEach(comic => {
             title:'<h2 class="swal-title">Producto agregado al carrito</h2>',
             background: '#242320',
             iconColor: '#deb928',
-            confirmButtonColor: '#deb928',
+            confirmButtonColor: '#ba970e',
         });
         addToLocalStorage('carrito', comic);
         precioFinal();
@@ -45,7 +45,7 @@ comics.forEach(comic => {
 
 mostrarComics();
 obtenerComics();
-
+//Incorporacion de fetch - llamada archivos json
 const obtenerJuguetes = async () => {
     try {
         const response = await fetch('/stockJuguetes.json');
@@ -55,7 +55,7 @@ const obtenerJuguetes = async () => {
         console.log('Error ', error)
     }
 }
-
+//Interactuar con Html - DOM
 const mostrarJuguetes = async () =>{
 const juguetesContenedor = document.getElementById('juguetes-contenedor');
 
@@ -69,7 +69,7 @@ juguetes.forEach(juguete => {
                         <article class="buy-card">
                                     <h5 class="title">${juguete.titulo}</h5>
                                     <p class="price">${juguete.precio}</p>
-                                    <button type="button" class="btn btn-primary btn-sm" id= boton${juguete.id}>Comprar</button>
+                                    <button type="button" class="btn btn-primary btn-sm" id= boton${juguete.id}>Agregar al carrito</button>
                                 </article>
                         `;
     juguetesContenedor.appendChild(article);
@@ -91,7 +91,7 @@ juguetes.forEach(juguete => {
 
 mostrarJuguetes();
 obtenerJuguetes();
-
+//Incorporacion de fetch - llamada archivos json
 const obtenerRemeras = async () => {
     try {
         const response = await fetch('/stockRemeras.json');
@@ -101,7 +101,7 @@ const obtenerRemeras = async () => {
         console.log('Error ', error)
     }
 }
-
+//Interactuar con html - DOM
 const mostrarRemeras = async () =>{
 
 const remerasContenedor = document.getElementById('remeras-contenedor');
@@ -116,7 +116,7 @@ remeras.forEach(remera => {
                         <article class="buy-card">
                                     <h5 class="title">${remera.titulo}</h5>
                                     <p class="price">${remera.precio}</p>
-                                    <button type="button" class="btn btn-primary btn-sm" id= boton${remera.id}>Comprar</button>
+                                    <button type="button" class="btn btn-primary btn-sm" id= boton${remera.id}>Agregar al carrito</button>
                                 </article>
                         `;
     remerasContenedor.appendChild(article);
@@ -150,7 +150,7 @@ const obtenerCarrito = () => {
     return textoComics;
 }
 
-
+//Seteo de productos en local storage
 //Recibe la key carrito y un producto a guardar en el
 function addToLocalStorage(key, producto) {
     //trae lo que hay en el carrito
@@ -165,7 +165,7 @@ function addToLocalStorage(key, producto) {
     localStorage.setItem(key, arrayCarritoJson);
 }
 
-
+//Validacion de productos repetidos
     const validarProductoRepetido = (productoNuevo, arrayCarrito) => {
         let indice = arrayCarrito.findIndex((prod) => prod.id === productoNuevo.id);
         console.log(indice);
@@ -180,7 +180,7 @@ function addToLocalStorage(key, producto) {
         }
         return arrayCarrito;
     }
-
+//Funcion calculo precio final
     const precioFinal = () => {
         const productosEnCarrito = localStorage.getItem('carrito');
         const arrayCarrito = JSON.parse(productosEnCarrito) || [];
@@ -189,10 +189,6 @@ function addToLocalStorage(key, producto) {
         console.log(total)
         return total;
     };
-
-    // const mostrarTotal = () => {
-        
-    // }
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
@@ -203,7 +199,7 @@ carrito.addEventListener('click', () => {
         showCancelButton: true,
         position: 'top-end',
         background: '#242320',
-        confirmButtonColor: '#deb928',
+        confirmButtonColor: '#ba970e',
         confirmButtonText: 'Continuar comprando',
         denyButtonText: `Finalizar compra`,
     }).then((result) => {
@@ -216,8 +212,7 @@ carrito.addEventListener('click', () => {
             position: 'top-end',
             background: '#242320',
             iconColor: '#deb928',
-            confirmButtonColor: '#deb928',
-//            text: precioFinal()
+            confirmButtonColor: '#ba970e',
         }).then((result) => {
             if(result.isConfirmed) {
                 Swal.fire({
@@ -227,7 +222,7 @@ carrito.addEventListener('click', () => {
                     position: 'top-end',
                     background: '#242320',
                     iconColor: '#deb928',
-                    confirmButtonColor: '#deb928',
+                    confirmButtonColor: '#ba970e',
                 })
             }
         })

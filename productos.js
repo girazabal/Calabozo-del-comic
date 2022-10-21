@@ -142,6 +142,7 @@ const obtenerCarrito = () => {
     //Hay que traer los que esten en el carrito
     let productosEnCarrito = localStorage.getItem('carrito');
     let arrayCarrito = JSON.parse(productosEnCarrito) || [];
+    arrayCarrito.length === 0 && console.log('El carrito se encuentra vacio');
     let textoComics = '';
     arrayCarrito.forEach(producto => {
         textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' -    $' + producto.precio + ' - Unid.: ' + producto.cantidad + '</p>';
@@ -157,7 +158,6 @@ function addToLocalStorage(key, producto) {
     //lo convierte en objeto
     let arrayCarrito = JSON.parse(arrayCarritoJson) || [];
     //lo agrega al array
-//    arrayCarrito.push(producto);
     arrayProducto = validarProductoRepetido(producto, arrayCarrito);
     //lo vuelve a hacer un JSON
     arrayCarritoJson = JSON.stringify(arrayCarrito);
@@ -173,7 +173,8 @@ function addToLocalStorage(key, producto) {
             console.log('Producto repetido');
             arrayCarrito[indice].cantidad++
             console.log(arrayCarrito[indice]);
-        }else{
+        }
+        else{
             console.log('Producto nuevo');
             arrayCarrito.push(productoNuevo);
         }
@@ -185,8 +186,13 @@ function addToLocalStorage(key, producto) {
         const arrayCarrito = JSON.parse(productosEnCarrito) || [];
         arrayCarritoJson = JSON.stringify(arrayCarrito);
         const total = arrayCarrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
-        console.log(total);
+        console.log(total)
+        return total;
     };
+
+    // const mostrarTotal = () => {
+        
+    // }
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
@@ -205,23 +211,23 @@ carrito.addEventListener('click', () => {
     } else if (result.isDenied) {
         Swal.fire({
             icon: 'success',
-            title: '<h2 class"swal-title">Su compra ha sido realizada con exito</h2>',
+            title: `<h2 class"swal-title">El precio final de su compra es de $ ${precioFinal() } </h2>`,
             timer: 5000,
             position: 'top-end',
             background: '#242320',
             iconColor: '#deb928',
             confirmButtonColor: '#deb928',
+//            text: precioFinal()
         }).then((result) => {
             if(result.isConfirmed) {
                 Swal.fire({
                     icon: 'success',
-                    title: '<h2 class"swal-title">El precio final de su compra es de </h2>',
+                    title: '<h2 class"swal-title">Su compra ha sido realizada con exito</h2>',
                     timer: 5000,
                     position: 'top-end',
                     background: '#242320',
                     iconColor: '#deb928',
                     confirmButtonColor: '#deb928',
-                    html: precioFinal(),
                 })
             }
         })

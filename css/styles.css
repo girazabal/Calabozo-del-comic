@@ -890,6 +890,9 @@ label {
 .swal-title {
   color: #deb928; }
 
+.swal2-content {
+  color: #deb928; }
+
 .btn {
   background-color: #deb928;
   border: #deb928;
@@ -899,6 +902,9 @@ label {
 .btn-primary {
   color: #242320;
   font-size: 15px; }
+
+.carrito-cursor {
+  cursor: pointer; }
 
 h2 {
   margin: 0 0 0 20px; }

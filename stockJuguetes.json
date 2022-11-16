@@ -2,7 +2,7 @@
     {
         "id": 6,
         "titulo": "Homero Simpson",
-        "precio": 25000,
+        "precio": 25.000,
         "className": "productos-1",
         "cantidad": 1
     },
@@ -22,8 +22,8 @@
     },
     {
         "id":9,
-        "titulo": "Spiderman 2(2004)",
-        "precio": 20000,
+        "titulo": "Spiderman 2",
+        "precio": 20.000,
         "className": "productos-4",
         "cantidad": 1
     }

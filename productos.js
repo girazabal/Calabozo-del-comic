@@ -1,7 +1,8 @@
 //Incorporacion de fetch - llamada archivo json
 const obtenerComics = async () => {
     try {
-        const response = await fetch('/stockComics.json');
+        // const response = await fetch('/stockComics.json');
+        const response = await fetch('https://girazabal.github.io/Calabozo-del-comic/pages/nuestros-productos.html');
         const data = await response.json();
         return data;
     } catch (error) {
@@ -142,12 +143,13 @@ const obtenerCarrito = () => {
     //Hay que traer los que esten en el carrito
     let productosEnCarrito = localStorage.getItem('carrito');
     let arrayCarrito = JSON.parse(productosEnCarrito) || [];
-    arrayCarrito.length === 0 && console.log('El carrito se encuentra vacio');
+    arrayCarrito.length === 0 && console.log('El carrito se encuentra vacío');
     let textoComics = '';
     arrayCarrito.forEach(producto => {
-        textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' -    $' + producto.precio + ' - Unid.: ' + producto.cantidad + '</p>';
+        textoComics = textoComics + ' ' + '<p>' + producto.titulo + ' - $ ' + producto.precio + ' - Unid.: ' + producto.cantidad + '</p>';
     });
-    return textoComics;
+    return arrayCarrito?.lenght ? 'El carrito se encuentra vacío' : textoComics;
+//    return textoComics;
 }
 
 //Seteo de productos en local storage
@@ -192,7 +194,7 @@ function addToLocalStorage(key, producto) {
 
 const carrito = document.getElementById('carrito-contenedor');
 carrito.addEventListener('click', () => {
-    Swal.fire({
+        Swal.fire({
         title: '<h2 class="swal-title">Este es tu carrito</h2>',
         html: obtenerCarrito(),
         showDenyButton: true,

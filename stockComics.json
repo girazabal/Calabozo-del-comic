@@ -10,7 +10,7 @@
     {
         "id": 2,
         "titulo": "X-men Origins",
-        "precio": 330,
+        "precio": 300,
         "className": "comic-xmen",
         "cantidad": 1
     },
